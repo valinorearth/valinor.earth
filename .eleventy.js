@@ -29,6 +29,18 @@ module.exports = function(eleventyConfig) {
       : "";
   });
 
+  // Adds a universal shortcode to get permalink by contentId and locale {% getPermalink contentId, locale%}
+  eleventyConfig.addShortcode("getPermalink", function(
+    collection,
+    contentId,
+    locale = "en"
+  ) {
+    const localePages = collection.filter(p => p.data.locale === locale);
+    const page = localePages.find(p => p.data.contentId === contentId);
+
+    if (page) return page.url;
+  });
+
   // Copy all images directly to dist.
   eleventyConfig.addPassthroughCopy({ "src/img": "img" });
 
@@ -37,7 +49,14 @@ module.exports = function(eleventyConfig) {
 
   // A debug utility.
   eleventyConfig.addFilter("dump", obj => {
-    return util.inspect(obj);
+    console.log(obj);
+    return obj;
+  });
+
+  eleventyConfig.addFilter("removeDir", (path, level = 1) => {
+    const arr = path.split("/");
+    console.log(path, arr);
+    return arr.slice(level + 1).join("/");
   });
 
   return {
