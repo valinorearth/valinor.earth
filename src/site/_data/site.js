@@ -8,12 +8,13 @@ module.exports = {
       label: "English",
     },
     {
-      code: "jp",
+      code: "ja",
       label: "日本語",
     },
   ],
   primaryNav: [
     // contentIds from pages
     "company",
+    "blog",
   ],
 };

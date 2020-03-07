@@ -1,5 +1,7 @@
 {% extends "layouts/base.njk" %}
 
 {% block content %}
+  <h1>{{title}}</h1>
+  <span>{% dateShort page.date, locale%}</span>
   {{ content | safe }}
 {% endblock %}

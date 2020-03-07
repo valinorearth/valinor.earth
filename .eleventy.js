@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const moment = require("moment");
 
 const isDev = process.env.APP_ENV === "development";
 
@@ -39,6 +40,14 @@ module.exports = function(eleventyConfig) {
     const page = localePages.find(p => p.data.contentId === contentId);
 
     if (page) return page.url;
+  });
+
+  // Adds a universal shortcode to get permalink by contentId and locale {% getPermalink contentId, locale%}
+  eleventyConfig.addShortcode("dateShort", function(date, locale = "en") {
+    console.log(locale);
+    return moment(date)
+      .locale(locale)
+      .format("ll");
   });
 
   // Copy all images directly to dist.
