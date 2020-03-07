@@ -12,7 +12,7 @@
     {% bundledCss %}
     <title>{{ title }}</title>
   </head>
-  <body>
+  <body class="font-body">
     <nav>
       {% for locale in site.locales %} {% for item in collections.all %} {% if
       item.data.locale === locale.code and item.data.contentId and item.data.contentId === contentId %}
