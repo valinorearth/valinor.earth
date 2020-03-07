@@ -3,7 +3,7 @@ const path = require("path");
 const moment = require("moment");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
-const isDev = process.env.APP_ENV === "development";
+const isDev = process.env.NODE_ENV === "development";
 
 const manifestPath = path.resolve(__dirname, "dist", "assets", "manifest.json");
 const manifest = isDev

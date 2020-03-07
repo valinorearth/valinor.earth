@@ -2,7 +2,7 @@ const path = require("path");
 const ManifestPlugin = require("webpack-manifest-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-const isDev = process.env.APP_ENV === "development";
+const isDev = process.env.NODE_ENV === "development";
 
 const baseFilename = isDev ? "index" : "index.[contenthash]";
 
