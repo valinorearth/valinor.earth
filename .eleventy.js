@@ -13,8 +13,35 @@ const manifest = isDev
     }
   : JSON.parse(fs.readFileSync(manifestPath, { encoding: "utf8" }));
 
+const collectionSortFn = function(a, b) {
+  return b.date - a.date;
+};
+
+const collectionFilterByFn = (key, value) => {
+  return obj => {
+    if (Array.isArray(obj.data[key])) return obj.data[key].includes(value);
+    return obj.data[key] === value;
+  };
+};
+
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
+
+  eleventyConfig.addCollection("jaPosts", function(collection) {
+    return collection
+      .getAll()
+      .filter(collectionFilterByFn("tags", "posts"))
+      .filter(collectionFilterByFn("locale", "ja"))
+      .sort(collectionSortFn);
+  });
+
+  eleventyConfig.addCollection("enPosts", function(collection) {
+    return collection
+      .getAll()
+      .filter(collectionFilterByFn("tags", "posts"))
+      .filter(collectionFilterByFn("locale", "en"))
+      .sort(collectionSortFn);
+  });
 
   // Layout aliases make templates more portable.
   eleventyConfig.addLayoutAlias("default", "layouts/default.njk");
@@ -68,6 +95,10 @@ module.exports = function(eleventyConfig) {
     const arr = path.split("/");
 
     return arr.slice(level + 1).join("/");
+  });
+
+  eleventyConfig.addFilter("date", (date, format = "yyyy-MM-dd") => {
+    return moment(date).format(format);
   });
 
   return {
