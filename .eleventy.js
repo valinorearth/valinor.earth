@@ -55,7 +55,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter("removeDir", (path, level = 1) => {
     const arr = path.split("/");
-    console.log(path, arr);
+
     return arr.slice(level + 1).join("/");
   });
 

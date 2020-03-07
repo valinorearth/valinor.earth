@@ -1,1 +1,1 @@
-console.log("Elevenpack javascript is loaded");
+console.log("JavaScript is loaded");
