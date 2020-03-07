@@ -1,0 +1,24 @@
+---
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.title[locale] }}</title>
+  <description>{{ site.description[locale] }}</description>
+  <link href="{{site.baseUrl}}{{ page.url }}" rel="self"/>
+  <link href="{{site.baseUrl}}"/>
+  <updated>{{ collections.posts | rssLastUpdatedDate }}</updated>
+  <id>{{site.baseUrl}}</id>
+  {% for post in collections.posts %}
+  {%if locale === post.data.locale %}
+  {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ absolutePostUrl }}"/>
+    <updated>{{ post.date | rssDate }}</updated>
+    <id>{{ absolutePostUrl }}</id>
+    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+  </entry>
+  {%endif %}
+  {% endfor %}
+</feed>

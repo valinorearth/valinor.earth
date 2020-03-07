@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const moment = require("moment");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 const isDev = process.env.APP_ENV === "development";
 
@@ -13,6 +14,8 @@ const manifest = isDev
   : JSON.parse(fs.readFileSync(manifestPath, { encoding: "utf8" }));
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addPlugin(pluginRss);
+
   // Layout aliases make templates more portable.
   eleventyConfig.addLayoutAlias("default", "layouts/default.njk");
 
@@ -44,7 +47,6 @@ module.exports = function(eleventyConfig) {
 
   // Adds a universal shortcode to get permalink by contentId and locale {% getPermalink contentId, locale%}
   eleventyConfig.addShortcode("dateShort", function(date, locale = "en") {
-    console.log(locale);
     return moment(date)
       .locale(locale)
       .format("ll");
