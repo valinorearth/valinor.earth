@@ -9,7 +9,7 @@ eleventyExcludeFromCollections: true
   <link href="{{site.baseUrl}}"/>
   <updated>{{ collections.posts | rssLastUpdatedDate }}</updated>
   <id>{{site.baseUrl}}</id>
-  {% for post in collections.posts %}
+  {% for post in collections.posts.slice(0,10) | reverse %}
   {%if locale === post.data.locale %}
   {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
   <entry>
