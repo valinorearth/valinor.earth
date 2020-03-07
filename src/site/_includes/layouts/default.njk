@@ -23,7 +23,7 @@
     <nav>
       {% for id in site.primaryNav %}
         {% for item in collections.all %}
-          {% if item.data.locale === locale and item.data.contentId === id %}
+          {% if item.data.locale === locale and item.data.contentId and item.data.contentId === id %}
             <a href="{{ item.url }}">{{item.data.title}}</a>
           {% endif %}
         {% endfor%}
