@@ -1,3 +1,4 @@
+// https://tailwindcss.com/docs/controlling-file-size#setting-up-purgecss
 const purgecss = require("@fullhuman/postcss-purgecss")({
   content: ["./src/**/*.njk", "./src/**/*.html", "./src/**/*.md"],
 
