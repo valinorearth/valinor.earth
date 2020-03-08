@@ -11,28 +11,35 @@
 
 <body>
 <div class="page">
-  <nav>
-    <a class="inline-block" href="{% getPermalink collections.all, " home", locale %}">
-      <img class="w-12" src="/img/sagri-logo.svg" alt="Logo of SAgri">
-    </a>
-    <div>
-      {% for locale in site.locales %} {% for item in collections.all %} {% if
-      item.data.locale === locale.code and item.data.contentId and item.data.contentId === contentId %}
-      <a href="{{ item.url }}">{{locale.label}}</a>
-      {% endif %} {% endfor%} {% endfor%}
-    </div>
-    <div>
-      {% for id in site.primaryNav %}
-      {% for item in collections.all %}
-      {% if item.data.locale === locale and item.data.contentId === id %}
-      <a href="{{ item.url }}">{{item.data.title}}</a>
-      {% endif %}
-      {% endfor%}
-      {% endfor%}
-    </div>
-  </nav>
+  <header class="mx-auto px-4 max-w-6xl">
+    <nav class="py-4 border-solid border-b border-gray-200 flex items-center flex-col md:flex-row">
+      <a class="md:mr-auto pr-4 inline-block flex items-center no-underline text-gray-600 font-semibold hover:underline hover:text-gray-700" href="{% getPermalink collections.all, "home", locale %}">
+        <img class="w-10 flex-shrink-0" src="/img/sagri-logo.svg" alt="Logo of SAgri">
+        <span class="ml-2 text-xl">{{site.title[locale]}}</span>
+      </a>
+      <ul class="header-list">
+        {% for id in site.primaryNav %}
+        {% for item in collections.all %}
+        {% if item.data.locale === locale and item.data.contentId === id %}
+        <li>
+          <a href="{{ item.url }}">{{item.data.title}}</a>
+        </li>
+        {% endif %}
+        {% endfor%}
+        {% endfor%}
+      </ul>
+      <ul class="header-list md:ml-6">
+        {% for locale in site.locales %} {% for item in collections.all %} {% if
+        item.data.locale === locale.code and item.data.contentId and item.data.contentId === contentId %}
+        <li>
+          <a href="{{ item.url }}">{{locale.label}}</a>
+        </li>
+        {% endif %} {% endfor%} {% endfor%}
+      </ul>
+    </nav>
+  </header>
 
-  <main id="main" tabindex="-1" class="frame">
+  <main id="main" tabindex="-1" class="frame mt-4">
     {% block content %}{% endblock %}
   </main>
 </div>

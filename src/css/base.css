@@ -1,5 +1,5 @@
 html {
-  @apply text-xl leading-normal font-body bg-white;
+  @apply text-xl leading-normal font-body bg-gray-800;
 }
 
 a {
@@ -26,4 +26,16 @@ a:active {
 
 .page-footer__wrapper {
   @apply py-8;
+}
+
+.header-list {
+  @apply flex;
+}
+
+.header-list li {
+  @apply whitespace-no-wrap;
+}
+
+.header-list li + li {
+  @apply ml-2;
 }
