@@ -13,6 +13,9 @@
     <title>{{ title }}</title>
   </head>
   <body>
+    <a class="inline-block" href="{% getPermalink collections.all, "home", locale %}">
+      <img class="w-12" src="/img/sagri-logo.svg" alt="Logo of SAgri">
+    </a>
     <nav>
       {% for locale in site.locales %} {% for item in collections.all %} {% if
       item.data.locale === locale.code and item.data.contentId and item.data.contentId === contentId %}
@@ -29,8 +32,6 @@
         {% endfor%}
       {% endfor%}
     </nav>
-
-    <a href="{% getPermalink collections.all, "home", locale %}">Sagri</a>
 
     <div class="content content-lead">
       {% block content %}{% endblock %}

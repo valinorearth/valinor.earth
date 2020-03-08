@@ -1,13 +1,13 @@
 html {
-  @apply font-body;
+  @apply font-body bg-yellow-100;
 }
 
 a {
-  @apply text-purple-700 underline;
+  @apply text-blue-700 underline;
 }
 
 a:hover,
 a:focus,
 a:active {
-  @apply text-purple-900;
+  @apply text-blue-900;
 }
