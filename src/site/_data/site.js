@@ -13,7 +13,7 @@ module.exports = {
     },
   ],
   title: {
-    en: "Sagri",
+    en: "SAgri",
     ja: "SAgri株式会社",
   },
   description: {
@@ -24,7 +24,7 @@ module.exports = {
   },
   primaryNav: [
     // contentIds from pages
-    "company",
-    "blog",
+    // "company",
+    // "blog",
   ],
 };
