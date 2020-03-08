@@ -1,0 +1,13 @@
+html {
+  @apply font-body;
+}
+
+a {
+  @apply text-purple-700 underline;
+}
+
+a:hover,
+a:focus,
+a:active {
+  @apply text-purple-900;
+}
