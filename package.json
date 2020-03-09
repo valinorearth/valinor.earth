@@ -16,7 +16,8 @@
     "predev": "run-s clean",
     "dev": "run-p dev:*",
     "dev:assets": "NODE_ENV=development webpack --mode production --watch",
-    "dev:site": "NODE_ENV=development eleventy --serve"
+    "dev:site": "NODE_ENV=development eleventy --serve",
+    "deploy": "discharge deploy"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
