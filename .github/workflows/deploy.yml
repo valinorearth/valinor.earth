@@ -1,4 +1,4 @@
-name: Check build
+name: Deploy website
 
 on:
   push:
@@ -11,7 +11,7 @@ env:
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
 jobs:
-  test:
+  deploy:
     runs-on: ubuntu-latest
 
     strategy:
