@@ -2,7 +2,10 @@
 
 name: Check build
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   test:
@@ -16,5 +19,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install Dependencies
         run: npm install
-      - name: Test build
-        run: npm run build
+      - name: Deploy
+        run: npm run deploy
