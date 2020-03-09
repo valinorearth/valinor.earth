@@ -4,7 +4,7 @@
   <ul>
     {% for post in pagination.items | reverse %}
       {% if post.data.locale === locale %}
-      <li><span>{% dateShort post.date, locale%}</span> <a href="{{ post.url }}">{{ post.data.title }}</a></li>
+      <li><span>{{ page.date | date('ll', locale) }}</span> <a href="{{ post.url }}">{{ post.data.title }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>

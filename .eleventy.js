@@ -72,13 +72,6 @@ module.exports = function(eleventyConfig) {
     if (page) return page.url;
   });
 
-  // Adds a universal shortcode to get permalink by contentId and locale {% getPermalink contentId, locale%}
-  eleventyConfig.addShortcode("dateShort", function(date, locale = "en") {
-    return moment(date)
-      .locale(locale)
-      .format("ll");
-  });
-
   // Copy all images directly to dist.
   eleventyConfig.addPassthroughCopy({ "src/img": "img" });
 
@@ -97,8 +90,10 @@ module.exports = function(eleventyConfig) {
     return arr.slice(level + 1).join("/");
   });
 
-  eleventyConfig.addFilter("date", (date, format = "yyyy-MM-dd") => {
-    return moment(date).format(format);
+  eleventyConfig.addFilter("date", (date, format, locale = "en") => {
+    return moment(date)
+      .locale(locale)
+      .format(format);
   });
 
   return {
