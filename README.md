@@ -19,12 +19,8 @@ The `src/img` folder will be copied verbatim and you can reference any file by u
 
 The `src/js` and `src/css` folders will be bundled. The `index.js` &amp; `index.css` files are the entry points and thus required.
 
-## Deploy
+## Deployment
 
-### Enviroment variables
+The code gets deployed when pushed to `master` branch.
 
-`AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` environment variables should be set.
-
-```bash
-$ npm run deploy
-```
+In case if you want to deploy manually, set `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` environment variables. Then, run the command `npm run deploy` from the project directory.
