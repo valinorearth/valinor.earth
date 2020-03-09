@@ -37,7 +37,7 @@ a:active {
 }
 
 .header-list li + li {
-  @apply ml-2;
+  @apply ml-4;
 }
 
 .markdown * + * {
