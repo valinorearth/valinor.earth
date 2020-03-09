@@ -1,0 +1,27 @@
+<header class="frame mb-8">
+  <nav class="py-4 border-solid border-b border-gray-200 flex items-center flex-col md:flex-row">
+    <a class="md:mr-auto pr-4 inline-block flex items-center no-underline text-gray-600 font-bold hover:underline hover:text-gray-700" href="{% getPermalink collections.all, "home", locale %}">
+      <img class="w-10 flex-shrink-0" src="/img/sagri-logo.svg" alt="Logo of SAgri">
+      <span class="ml-2 text-xl">{{site.title[locale]}}</span>
+    </a>
+    <ul class="header-list">
+      {% for id in site.primaryNav %}
+      {% for item in collections.all %}
+      {% if item.data.locale === locale and item.data.contentId === id %}
+      <li>
+        <a href="{{ item.url }}">{{item.data.title}}</a>
+      </li>
+      {% endif %}
+      {% endfor%}
+      {% endfor%}
+    </ul>
+    <ul class="header-list md:ml-8">
+      {% for locale in site.locales %} {% for item in collections.all %} {% if
+      item.data.locale === locale.code and item.data.contentId and item.data.contentId === contentId %}
+      <li>
+        <a href="{{ item.url }}">{{locale.label}}</a>
+      </li>
+      {% endif %} {% endfor%} {% endfor%}
+    </ul>
+  </nav>
+</header>
