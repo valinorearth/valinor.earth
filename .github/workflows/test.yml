@@ -2,6 +2,9 @@ name: Check build
 
 on: [push, pull_request]
 
+env:
+  NODE_ENV: ${{ secrets.NODE_ENV }}
+
 jobs:
   test:
     runs-on: ubuntu-latest
