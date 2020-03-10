@@ -2,6 +2,10 @@ html {
   @apply text-xl leading-normal font-body bg-gray-800;
 }
 
+html[lang="ja"] {
+  @apply leading-loose;
+}
+
 a {
   @apply text-blue-700 underline;
 }
