@@ -51,3 +51,20 @@ a:active {
 [tabindex="-1"] {
   outline: none;
 }
+
+/* print.css */
+@media print {
+  html {
+    @apply bg-transparent;
+    font-size: 100%;
+  }
+
+  .page {
+    @apply min-h-0;
+  }
+
+  body > *:not(.page),
+  .page > *:not(main) {
+    @apply hidden;
+  }
+}
