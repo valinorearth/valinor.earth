@@ -2,7 +2,7 @@ html {
   @apply text-xl leading-normal font-body bg-gray-800;
 }
 
-html[lang="ja"] {
+html:lang("ja") {
   @apply leading-loose;
 }
 
