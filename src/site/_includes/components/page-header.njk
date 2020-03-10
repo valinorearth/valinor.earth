@@ -19,7 +19,9 @@
       {% for locale in site.locales %} {% for item in collections.all %} {% if
       item.data.locale === locale.code and item.data.contentId and item.data.contentId === contentId %}
       <li>
-        <a href="{{ item.url }}">{{locale.label}}</a>
+        <a href="{{ item.url }}"
+           hreflang="{{ locale.code}}"
+           lang="{{ locale.code}}">{{locale.label}}</a>
       </li>
       {% endif %} {% endfor%} {% endfor%}
     </ul>
