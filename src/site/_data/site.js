@@ -24,7 +24,9 @@ module.exports = {
   },
   primaryNav: [
     // contentIds from pages
-    // "company",
-    // "blog",
+    "about",
+    "career",
+    "blog",
+    "contact",
   ],
 };
