@@ -9,16 +9,16 @@
     "url": "https://github.com/deviousdodo/elevenpack"
   },
   "scripts": {
-    "build": "run-s clean build:assets build:site",
+    "build": "NODE_ENV=production run-s clean build:assets build:site",
     "build:assets": "webpack --mode production",
     "build:site": "eleventy",
     "clean": "rm -rf ./dist",
     "predev": "run-s clean",
-    "dev": "run-p dev:*",
-    "dev:assets": "NODE_ENV=development webpack --mode production --watch",
-    "dev:site": "NODE_ENV=development eleventy --serve",
+    "dev": "NODE_ENV=development run-p dev:*",
+    "dev:assets": "webpack --mode development --watch",
+    "dev:site": "eleventy --serve",
     "deploy": "discharge deploy",
-    "test": "NODE_ENV=production run-s build"
+    "test": "run-s build"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.10.0",
