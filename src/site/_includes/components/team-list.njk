@@ -1,0 +1,14 @@
+<ul class="md:flex flex-wrap md:-mx-4">
+  {% for person in collections.orderedTeam %}
+    {% if person.data.locale === locale %}
+      <li class="md:w-1/2 md:px-4 pb-2 mt-8">
+        <div>
+          <h3 class="font-bold">{{person.data.name}}</h3>
+          <p class="text-gray-700 text-sm">{{person.data.title}}</p>
+
+          <div class="text-sm mt-4 base-content">{{person.templateContent | safe}}</div>
+        </div>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

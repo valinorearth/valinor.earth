@@ -43,6 +43,22 @@ module.exports = function(eleventyConfig) {
       .sort(collectionSortFn);
   });
 
+  eleventyConfig.addCollection("orderedTeam", function(collection) {
+    return collection
+      .getAll()
+      .filter(collectionFilterByFn("tags", "team"))
+      .sort(function(a, b) {
+        if (a.data.order > b.data.order) {
+          return -1;
+        }
+        if (a.data.order > b.data.order) {
+          return 1;
+        }
+
+        return 0;
+      });
+  });
+
   // Layout aliases make templates more portable.
   eleventyConfig.addLayoutAlias("default", "layouts/default.njk");
 
