@@ -16,11 +16,13 @@ a:active {
   @apply text-blue-900;
 }
 
+/* purgecss ignore */
 [href="#main"] {
   @apply absolute top-0 z-50;
   right: 100%;
 }
 
+/* purgecss ignore */
 [href="#main"]:focus {
   @apply right-auto bg-white p-2;
 }
