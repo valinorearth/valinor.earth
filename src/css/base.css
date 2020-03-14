@@ -37,6 +37,10 @@ a:active {
   @apply relative z-10 bg-white min-h-screen pb-8;
 }
 
+.page__title {
+  @apply mt-16 mb-4 font-bold text-3xl;
+}
+
 .page-footer {
   @apply sticky w-full bottom-0 left-0 text-sm bg-gray-800 text-gray-200;
 }
@@ -45,7 +49,6 @@ a:active {
   @apply py-8;
 }
 
-.markdown * + *,
 .base-content * + * {
   @apply mt-4;
 }
@@ -77,6 +80,12 @@ a:active {
 
 .tpp-logo-link:hover img {
   filter: grayscale(0%);
+}
+
+.section {
+}
+.section__title {
+  @apply border-t-4 mb-8 pt-2 text-gray-700;
 }
 
 /* print.css */

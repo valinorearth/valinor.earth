@@ -1,10 +1,11 @@
 ---
 title: SAgri, Inc.
 contentId: home
-"permalink": "index.html"
+permalink: index.html
+layout: layouts/home.njk
 ---
 
-<div class="hero -m-4 -mt-8 md:m-0 px-4 md:px-16 py-8 md:pt-32 md:pb-16 bg-blue-600">
+<div class="hero -m-4 md:mx-0 px-4 md:px-16 py-8 md:pt-32 md:pb-16 bg-blue-600">
   <div class="max-w-lg">
     <h1 class="sr-only">{{site.title[locale]}}</h1>
     <p class="font-bold text-gray-100 text-xl md:text-2xl">Striving to fullfill farmer’s life</p>
@@ -12,8 +13,8 @@ contentId: home
   </div>
 </div>
 
-<div class="mt-8">
-  <h2 class="border-t-4 pt-2 pb-8 text-gray-700">Projects</h2>
+<div class="section mt-8">
+  <h2 class="section__title">Projects</h2>
 
   <ul class="md:flex flex-wrap md:-mx-2">
     <li class="md:w-1/3 md:px-2">
@@ -44,10 +45,10 @@ contentId: home
   </ul>
 </div>
 
-<div class="mt-8">
+<div class="mt-16">
   <div class="md:flex flex-wrap md:-mx-2">
-    <div class="md:w-2/3 md:px-2">
-      <h2 class="border-t-4 pt-2 pb-8 text-gray-700">Partners</h2>
+    <div class="section md:w-2/3 md:px-2">
+      <h2 class="section__title">Partners</h2>
       <ul class="flex flex-wrap justify-center">
         <li class="tpp-logo-link">
           <a href="https://bon.pe/" target="_blank">
@@ -71,8 +72,8 @@ contentId: home
         </li>
       </ul>
     </div>
-    <div class="md:w-1/3 md:px-2 mt-8 md:mt-0">
-      <h2 class="border-t-4 pt-2 pb-8 text-gray-700">Customers</h2>
+    <div class="section md:w-1/3 md:px-2 mt-16 md:mt-0">
+      <h2 class="section__title">Customers</h2>
       <ul class="flex flex-wrap justify-center">
       <li class="tpp-logo-link">
           <a href="https://www.japan.go.jp/" target="_blank">
@@ -85,7 +86,7 @@ contentId: home
 </div>
 
 {#
-<div class="mt-8">
-  <h2 class="border-t-4 pt-2 pb-8 text-gray-700">Testimonials</h2>
+<div class="section mt-16">
+  <h2 class="section__title">Testimonials</h2>
 </div>
 #}
