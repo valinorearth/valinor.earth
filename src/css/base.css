@@ -25,6 +25,10 @@ a:active {
   @apply right-auto bg-white p-2;
 }
 
+[tabindex="-1"] {
+  outline: none;
+}
+
 .frame {
   @apply mx-auto px-4 max-w-4xl;
 }
@@ -41,24 +45,8 @@ a:active {
   @apply py-8;
 }
 
-.header-list {
-  @apply flex;
-}
-
-.header-list li {
-  @apply whitespace-no-wrap;
-}
-
-.header-list li + li {
-  @apply ml-4;
-}
-
 .markdown * + * {
   @apply mt-4;
-}
-
-[tabindex="-1"] {
-  outline: none;
 }
 
 /* print.css */
