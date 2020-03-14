@@ -34,7 +34,7 @@ a:active {
 }
 
 .page {
-  @apply relative z-10 bg-white min-h-screen;
+  @apply relative z-10 bg-white min-h-screen pb-8;
 }
 
 .page-footer {
@@ -45,8 +45,38 @@ a:active {
   @apply py-8;
 }
 
-.markdown * + * {
+.markdown * + *,
+.base-content * + * {
   @apply mt-4;
+}
+
+.base-content h1 {
+  @apply font-bold text-3xl;
+}
+
+.base-content h2 {
+  @apply font-bold text-xl;
+}
+
+.base-content h3 {
+  @apply font-bold;
+}
+
+.base-content h4 {
+  @apply text-gray-700;
+}
+
+.tpp-logo-link {
+  @apply block p-2;
+}
+
+.tpp-logo-link img {
+  @apply block w-32 h-auto;
+  filter: grayscale(100%);
+}
+
+.tpp-logo-link:hover img {
+  filter: grayscale(0%);
 }
 
 /* print.css */
