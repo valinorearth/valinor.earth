@@ -88,6 +88,11 @@ module.exports = function(eleventyConfig) {
     if (page) return page.url;
   });
 
+  eleventyConfig.addPairedNunjucksShortcode("onDevelopment", function(content) {
+    if (isDev) return content;
+    return "";
+  });
+
   // Copy all images directly to dist.
   eleventyConfig.addPassthroughCopy({ "src/img": "img" });
 
