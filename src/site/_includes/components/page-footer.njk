@@ -1,5 +1,33 @@
 <footer class="page-footer">
   <div class="page-footer__wrapper frame">
-    <p>&copy; {{buildTime | date('YYYY')}} {{site.title[locale]}}</p>
+    <ul class="flex">
+      {% for id in site.primaryNav %}
+      {% for item in collections.all %}
+      {% if item.data.locale === locale and item.data.contentId === id %}
+      <li>
+        <a class="mr-4 font-bold text-gray-100 hover:text-gray-100 no-underline hover:underline" href="{{ item.url }}">{{item.data.title}}</a>
+      </li>
+      {% endif %}
+      {% endfor%}
+      {% endfor%}
+    </ul>
+
+    {% set numOfLocales = collections.all | numberOfLocalesForContentId('home') %}
+
+    {% if numOfLocales > 1 %}
+    <ul class="flex mt-4">
+      {% for locale in site.locales %} {% for item in collections.all %} {% if
+      item.data.locale === locale.code and item.data.contentId and item.data.contentId === 'home' %}
+      <li>
+        <a class="mr-4 text-gray-100 hover:text-gray-100 no-underline hover:underline"
+           href="{{ item.url }}"
+           hreflang="{{ locale.code }}"
+           lang="{{ locale.code}} ">{{locale.label}}</a>
+      </li>
+      {% endif %} {% endfor%} {% endfor%}
+    </ul>
+    {% endif %}
+
+    <div class="mt-8 text-gray-500">&copy; {{buildTime | date('YYYY')}} {{site.title[locale]}}</div>
   </div>
 </footer>
