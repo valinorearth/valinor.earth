@@ -65,14 +65,14 @@ module.exports = function(eleventyConfig) {
   // Adds a universal shortcode to embed bundled CSS. In Nunjack templates: {% bundledCss %}
   eleventyConfig.addShortcode("bundledCss", function() {
     return manifest["main.css"]
-      ? `<link href="${manifest["main.css"]}" rel="stylesheet" />`
+      ? `<link href="${manifest["main.css"]}" rel="stylesheet" data-turbolinks-track="reload" />`
       : "";
   });
 
   // Adds a universal shortcode to embed bundled JS. In Nunjack templates: {% bundledJs %}
   eleventyConfig.addShortcode("bundledJs", function() {
     return manifest["main.js"]
-      ? `<script src="${manifest["main.js"]}"></script>`
+      ? `<script src="${manifest["main.js"]}" async defer data-turbolinks-track="reload"></script>`
       : "";
   });
 

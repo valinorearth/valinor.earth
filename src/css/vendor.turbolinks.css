@@ -1,0 +1,4 @@
+/* purgecss ignore */
+.turbolinks-progress-bar {
+  @apply bg-blue-500 h-1;
+}

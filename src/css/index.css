@@ -1,3 +1,6 @@
-@import "tailwind-base.css";
+@import "tailwind-base";
+
 @import "base";
-@import "tailwind-utils.css";
+@import "vendor.turbolinks";
+
+@import "tailwind-utils";

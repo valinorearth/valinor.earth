@@ -1,1 +1,2 @@
-console.log("JavaScript is loaded");
+import Turbolinks from "turbolinks";
+Turbolinks.start();
