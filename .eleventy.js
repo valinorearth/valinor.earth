@@ -96,6 +96,18 @@ module.exports = function(eleventyConfig) {
       .format(format);
   });
 
+  eleventyConfig.addFilter("numberOfLocalesForContentId", (all, contentId) => {
+    const pages = all.reduce((acc, p) => {
+      if (p.data.contentId === contentId) {
+        return [...acc, p];
+      }
+      return acc;
+    }, []);
+
+    let locales = pages.reduce((acc, page) => [...acc, page.data.locale], []);
+    return [...new Set(locales)].length;
+  });
+
   return {
     dir: {
       input: "src/site",

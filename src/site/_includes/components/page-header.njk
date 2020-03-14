@@ -1,6 +1,6 @@
 <header class="bg-gray-100">
   <div class="frame mb-8">
-    <nav class="py-4 flex items-center flex-col md:flex-row">
+    <nav class="pt-4 md:pb-4 flex items-center flex-col md:flex-row">
       <a class="md:mr-auto pr-4 inline-block flex items-center no-underline text-gray-700 font-bold hover:underline" href="{% getPermalink collections.all, "home", locale %}">
         <img class="w-8 flex-shrink-0" src="/img/sagri-logo.svg" alt="Logo of SAgri">
         <span class="ml-2 text-xl">{{site.title[locale]}}</span>
@@ -18,7 +18,10 @@
         {% endfor%}
       </ul>
 
-      <ul class="flex flex-wrap justify-center w-full md:w-auto pt-4 md:pt-0 md:ml-8 border-t md:border-t-0">
+      {% set numOfLocales = collections.all | numberOfLocalesForContentId(contentId) %}
+
+      {% if numOfLocales > 1 %}
+      <ul class="flex flex-wrap justify-center w-full md:w-auto py-4 md:py-0 md:ml-8 border-t md:border-t-0">
         {% for locale in site.locales %} {% for item in collections.all %} {% if
         item.data.locale === locale.code and item.data.contentId and item.data.contentId === contentId %}
         <li>
@@ -29,7 +32,7 @@
         </li>
         {% endif %} {% endfor%} {% endfor%}
       </ul>
-
+      {% endif %}
     </nav>
   </div>
 </header>
