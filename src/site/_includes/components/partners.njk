@@ -1,0 +1,11 @@
+<ul class="logo-list">
+  {% for p in partners %}
+    <li>
+      <a class="tpp-logo-link aspect-ratio aspect-ratio-1/2" href="{{p.url}}" target="_blank">
+        <div class="aspect-ratio__inner flex justify-center items-center">
+          <img class="max-w-full" width="120" src="{{p.logoPath}}" alt="Logo of {{p.name}}">
+        </div>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
