@@ -16,6 +16,10 @@ a:active {
   @apply text-blue-900;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* purgecss ignore */
 [href="#main"] {
   @apply absolute top-0 z-50;
@@ -73,7 +77,7 @@ a:active {
 
 .logo-list {
   @apply grid gap-2;
-  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 0.5fr));
 
   & li {
     @apply block;
@@ -94,14 +98,17 @@ a:active {
 
 .tpp-logo-link {
   @apply bg-gray-100 transition duration-150 ease-in-out transform;
+
+  &:hover,
+  &:active,
+  &:focus {
+    @apply -translate-y-1 scale-110;
+  }
 }
 
-.tpp-logo-link:hover,
-.tpp-logo-link:active,
-.tpp-logo-link:focus {
-  @apply -translate-y-1 scale-110;
+.tpp-logo-link__img {
+  @apply max-h-full object-contain;
 }
-
 .section {
 }
 
