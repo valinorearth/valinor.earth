@@ -72,16 +72,17 @@ a:active {
 }
 
 .tpp-logo-link {
-  @apply block p-2;
+  @apply block py-2 px-4 transition duration-150 ease-in-out transform;
+}
+
+.tpp-logo-link:hover,
+.tpp-logo-link:active,
+.tpp-logo-link:focus {
+  @apply -translate-y-1 scale-110;
 }
 
 .tpp-logo-link img {
-  @apply block w-32 h-auto;
-  filter: grayscale(100%);
-}
-
-.tpp-logo-link:hover img {
-  filter: grayscale(0%);
+  @apply block w-24 h-auto;
 }
 
 .section {
