@@ -5,7 +5,7 @@
       {% for item in collections.all %}
       {% if item.data.locale === locale and item.data.contentId === id %}
       <li>
-        <a class="mr-4 font-bold text-gray-100 hover:text-gray-100 no-underline hover:underline" href="{{ item.url }}">{{item.data.title}}</a>
+        <a class="mr-4 font-bold text-gray-100 hover:text-gray-100 focus:text-gray-100 no-underline underline hover:underline focus:underline" href="{{ item.url }}">{{item.data.title}}</a>
       </li>
       {% endif %}
       {% endfor%}
