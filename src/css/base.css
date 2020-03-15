@@ -36,7 +36,7 @@ a:active {
 }
 
 .page {
-  @apply relative z-10 bg-white min-h-screen pb-8;
+  @apply relative z-10 bg-white min-h-screen pb-16;
 }
 
 .page__title {
@@ -87,8 +87,9 @@ a:active {
 
 .section {
 }
+
 .section__title {
-  @apply border-t-4 mb-8 pt-2 text-gray-700;
+  @apply border-t-4 mb-8 pt-2 text-xl text-gray-600;
 }
 
 /* print.css */
