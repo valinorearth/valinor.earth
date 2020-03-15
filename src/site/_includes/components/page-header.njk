@@ -6,7 +6,7 @@
         <span class="ml-2 text-xl">{{site.title[locale]}}</span>
       </a>
 
-      <ul class="flex flex-wrap justify-center w-full md:w-auto py-4 md:py-0 mt-4 md:mt-0 border-t md:border-t-0">
+      <ul class="flex flex-wrap justify-center w-full md:w-auto pt-4 md:pt-0 mt-4 md:mt-0 border-t md:border-t-0">
         {% for id in site.primaryNav %}
         {% for item in collections.all %}
         {% if item.data.locale === locale and item.data.contentId === id %}
@@ -21,7 +21,7 @@
       {% set numOfLocales = collections.all | numberOfLocalesForContentId(contentId) %}
 
       {% if numOfLocales > 1 %}
-      <ul class="flex flex-wrap justify-center w-full md:w-auto py-4 md:py-0 md:ml-8 border-t md:border-t-0">
+      <ul class="flex flex-wrap justify-center w-full md:w-auto pt-4 md:pt-0 mt-4 md:mt-0 md:ml-8 border-t md:border-t-0">
         {% for locale in site.locales %} {% for item in collections.all %} {% if
         item.data.locale === locale.code and item.data.contentId and item.data.contentId === contentId %}
         <li>
