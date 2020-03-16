@@ -17,13 +17,11 @@
 
 <body {% onDevelopment %}data-turbolinks="false"{% endonDevelopment %}>
 <a href="#main">skip to main content</a>
-<div class="page">
-  {% include "components/page-header.njk" %}
+{% include "components/page-header.njk" %}
 
-  <main id="main" tabindex="-1" class="frame">
-    {% block content %}{% endblock %}
-  </main>
-</div>
+<main id="main" tabindex="-1" class="frame page">
+  {% block content %}{% endblock %}
+</main>
 
 {% include "components/page-footer.njk" %}
 </body>

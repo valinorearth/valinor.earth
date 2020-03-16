@@ -1,5 +1,5 @@
 html {
-  @apply text-xl leading-normal font-body bg-gray-800;
+  @apply text-xl leading-normal font-body bg-white;
 }
 
 html:lang("ja") {
@@ -40,7 +40,7 @@ img {
 }
 
 .page {
-  @apply relative z-10 bg-white min-h-screen pb-16;
+  @apply min-h-screen pb-16;
 }
 
 .page__title {
@@ -48,7 +48,7 @@ img {
 }
 
 .page-footer {
-  @apply sticky w-full bottom-0 left-0 text-sm bg-gray-800 text-gray-200;
+  @apply text-sm bg-gray-800 text-gray-200;
 }
 
 .page-footer__wrapper {
@@ -118,17 +118,7 @@ img {
 
 /* print.css */
 @media print {
-  html {
-    @apply bg-transparent;
-    font-size: 100%;
-  }
-
-  .page {
-    @apply min-h-0;
-  }
-
-  body > *:not(.page),
-  .page > *:not(main) {
+  body > *:not(main) {
     @apply hidden;
   }
 }
