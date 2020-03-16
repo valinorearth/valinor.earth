@@ -2,6 +2,7 @@ module.exports = {
   buildTime: new Date(),
   baseUrl: "https://sagri.co",
   name: "Sagri",
+  email: "hello@sagri.co",
   locales: [
     {
       code: "en",
