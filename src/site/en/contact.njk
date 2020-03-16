@@ -3,6 +3,16 @@ title: Contact
 contentId: contact
 ---
 
-<div class="base-content">
-  <p>Email us on <a href="mailto:hello@sagri.co">hello@sagri.co</a> for any queries.</p>
+<div class="section">
+  <div class="max-w-xl">
+    <div class="base-content">
+      <p>Email us on <a href="mailto:{{site.email}}">{{site.email}}</a> or fill out this form for any queries.</p>
+    </div>
+    <div class="mt-8">{% include "components/contact-form.njk" %}</div>
+  </div>
 </div>
+
+{#<div class="section mt-16">
+  <h2 class="section__title">Offices</h2>
+</div>
+#}
