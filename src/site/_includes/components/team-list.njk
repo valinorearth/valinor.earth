@@ -1,10 +1,28 @@
-<ul class="md:flex flex-wrap md:-mx-4">
+<ul class="md:flex flex-wrap md:-mx-4 -mt-16">
   {% for person in collections.orderedTeam %}
     {% if person.data.locale === locale %}
-      <li class="md:w-1/2 md:px-4 pb-2 mt-8">
+      <li class="md:w-1/2 md:px-4 pb-2 mt-16">
         <div>
+          {% if person.data.photoPath %}
+          <div class="w-32 overflow-hidden rounded-full mb-3">
+            <div class="aspect-ratio aspect-ratio-1/1">
+              <img
+                class="block aspect-ratio__inner"
+                src="{{ person.data.photoPath | url }}" alt="Photo of {{person.data.name}}">
+            </div>
+          </div>
+          {% endif %}
+
           <h3 class="font-bold">{{person.data.name}}</h3>
           <p class="text-gray-700 text-sm">{{person.data.title}}</p>
+          {% if person.data.socialLinks.length > 0 %}
+          <ul class="flex -ml-1">
+            {% for social in person.data.socialLinks %}
+              {% if not loop.first %}<span class="text-gray-700">·</span>{% endif %}
+              <li class="mx-1"><a class="text-sm" href="{{social.url}}" >{{social.title}}</a></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
 
           <div class="text-sm mt-4 base-content">{{person.templateContent | safe}}</div>
         </div>
