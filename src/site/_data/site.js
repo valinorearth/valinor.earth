@@ -3,6 +3,9 @@ module.exports = {
   baseUrl: "https://sagri.co",
   name: "Sagri",
   email: "hello@sagri.co",
+  twitter: "sagriearth",
+  linkedin: "sagri-co-ltd",
+  facebook: "SAgri-1831194850515104",
   locales: [
     {
       code: "en",
@@ -14,12 +17,12 @@ module.exports = {
     },
   ],
   title: {
-    en: "SAgri",
-    ja: "SAgri株式会社",
+    en: "Sagri",
+    ja: "Sagri株式会社",
   },
   description: {
     en:
-      "We use satellite data and agricultural data to provide applications that optimize agriculture agriculturally with our proprietary technology.",
+      "We use satellite imagery data and soil testing technology to provide applications that optimize productivity for farmers.",
     ja:
       "弊社は衛星データと農業データを用いて、独自の技術で農学的に農業を最適化するアプリケーションの提供を行っております。",
   },

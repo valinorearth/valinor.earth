@@ -1,10 +1,8 @@
 ---
 ---
 
-Brajeshwar Oinam started his entrepreneurial journey when he sold his first company to an American Startup, Mixercast, Inc, in 2006.
+Brajeshwar Oinam started his entrepreneurial journey with his first company in 2004, which was acquired by a Silicon Valley company in 2006. His next Startup was acquired in 2009. In 2010, he started Levoma, which became the first Indian Startup to graduate from the Founder Institute at the San Francisco Bay Area cohort in 2011. Levoma exited to a Singapore Investment firm, Kamelot Kapital Pte Ltd, in 2013.
 
-He started oCricket in 2017, which got acquired in 2009. The team went on to form Infinitely Beta that later became Helpshift, Inc (USA). His fourth Startup, Levoma, was the first Indian Startup to graduate from the Founder Institute at the San Francisco Bay Area cohort in 2011. Levoma exited to a Singapore Investment firm, Kamelot Kapital Pte Ltd, in 2013.
+Between 2014-2016, he worked as the Creative Director at the Bangalore Branch of [Razorfish](http://www.razorfish.com), one of the worlds’ largest interactive agencies. Later, he spent about 18 months helping [Mobisy](http://mobisy.com/), a Retail Intelligence Platform company in Bangalore, with their Product Strategy as the Chief Product Officer.
 
-For two years from (2014-2016), he worked as the Creative Director of Razorfish, one of the worlds’ largest interactive agencies at their Bangalore Branch. Razorfish is a publicly-traded company with its headquarter in New York and branches the world over. Later, he spent about 18 months helping Mobisy, a Retail Intelligence Platform company in Bangalore, with their Product Strategy as the Chief Product Officer.
-
-He now heads the India initiative, as the CEO of Sagri, focussing on solving Agriculture problems in the South Asian Region, especially India.
+He currently focuses on solving farmers' problems, and is trying to help curb the impact of Agriculture on climate change.

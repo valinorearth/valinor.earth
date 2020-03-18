@@ -6,7 +6,14 @@ contentId: contact
 <div class="section">
   <div class="max-w-xl">
     <div class="base-content">
-      <p>Email us on <a href="mailto:{{site.email}}">{{site.email}}</a> or fill out this form for any queries.</p>
+    	<p>
+    		Email us at <a href="mailto:{{site.email}}">{{site.email}}</a>,
+    		find us on
+    		<a href="https://twitter.com/{{site.twitter}}">Twitter</a>,
+    		<a href="https://www.linkedin.com/company/{{site.linkedin}}/">LinkedIn</a>, and
+    		<a href="https://www.facebook.com/{{site.facebook}}/">Facebook</a>.
+    	</p>	
+    	<p>Or, fill out the form for any queries.</p>
     </div>
     <div class="mt-8">{% include "components/contact-form.njk" %}</div>
   </div>
