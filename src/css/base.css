@@ -102,7 +102,7 @@ img {
   &:hover,
   &:active,
   &:focus {
-    @apply -translate-y-1 scale-110;
+    @apply -translate-y-1 scale-110 shadow-md z-10;
   }
 }
 
