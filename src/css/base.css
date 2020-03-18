@@ -93,7 +93,7 @@ img {
 }
 
 .aspect-ratio__inner {
-  @apply absolute top-0 h-full w-full;
+  @apply absolute top-0 left-0 h-full w-full;
 }
 
 .tpp-logo-link {
