@@ -77,7 +77,12 @@ img {
 
 .logo-list {
   @apply grid gap-2 -mt-4;
-  grid-template-columns: repeat(auto-fit, minmax(6rem, 0.5fr));
+
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+
+  @screen md {
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 0.5fr));
+  }
 
   & li {
     @apply block;
