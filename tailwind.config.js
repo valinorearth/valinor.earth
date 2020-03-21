@@ -8,6 +8,7 @@ module.exports = {
       body: ["Noto Serif JP", "serif"],
     },
     colors: {
+      transparent: colors.transparent,
       black: colors.black,
       white: colors.white,
       gray: colors.gray,
