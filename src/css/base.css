@@ -7,13 +7,13 @@ html:lang("ja") {
 }
 
 a {
-  @apply text-blue-700 underline;
+  @apply text-water-500 underline;
 }
 
 a:hover,
 a:focus,
 a:active {
-  @apply text-blue-900;
+  @apply text-water-700;
 }
 
 img {
