@@ -1,8 +1,8 @@
-{% set pageHeaderNavLinkClasses = "px-2 py-1 no-underline text-gray-700 rounded hover:bg-gray-200 focus:bg-gray-200 active:bg-gray-200" %}
+{% set pageHeaderNavLinkClasses = "no-underline text-gray-700 px-2 py-1 rounded hover:bg-gray-200 focus:bg-gray-200 active:bg-gray-200" %}
 <header>
   <div class="frame mb-8">
     <nav class="pt-8 pb-4 border-b-4 flex items-center flex-col md:flex-row">
-      <a class="md:mr-auto pr-4 inline-block flex items-center no-underline text-gray-700 font-bold hover:underline" href="{% getPermalink collections.all, "home", locale %}">
+      <a class="md:mr-auto md:-ml-2 p-2 inline-block flex items-center {{pageHeaderNavLinkClasses}} font-bold" href="{% getPermalink collections.all, "home", locale %}">
         <img class="w-8 flex-shrink-0" src="{{"/img/sagri-logo.svg" | url}}" alt="Logo of SAgri">
         <span class="ml-2 text-xl">{{site.title[locale]}}</span>
       </a>
