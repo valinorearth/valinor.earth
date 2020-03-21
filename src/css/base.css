@@ -97,12 +97,12 @@ img {
 }
 
 .tpp-logo-link {
-  @apply border rounded bg-white p-4 flex justify-center items-center transition duration-150 ease-in-out transform;
+  @apply border-water-150 rounded bg-white p-4 flex justify-center items-center transition duration-150 ease-in-out transform;
 
   &:hover,
   &:active,
   &:focus {
-    @apply -translate-y-1 shadow-md z-10;
+    @apply border bg-water-100 -translate-y-1 shadow-md z-10;
   }
 }
 
