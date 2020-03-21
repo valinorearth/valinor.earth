@@ -97,7 +97,7 @@ img {
 }
 
 .tpp-logo-link {
-  @apply rounded bg-gray-100 p-3 flex justify-center items-center transition duration-150 ease-in-out transform;
+  @apply border rounded bg-white p-4 flex justify-center items-center transition duration-150 ease-in-out transform;
 
   &:hover,
   &:active,
