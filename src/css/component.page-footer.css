@@ -1,0 +1,7 @@
+.page-footer {
+  @apply text-sm bg-gray-800 text-gray-200;
+}
+
+.page-footer__wrapper {
+  @apply py-8;
+}

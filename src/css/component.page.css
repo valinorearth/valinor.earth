@@ -1,0 +1,7 @@
+.page {
+  @apply min-h-screen pb-16;
+}
+
+.page__title {
+  @apply mt-16 mb-4 font-bold text-3xl;
+}

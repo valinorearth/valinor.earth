@@ -8,6 +8,6 @@
   <aside class="col-start-1 col-end-4 text-gray-700">
     <time datetime="{{page.date | date('YYYY-MM-DD') }}">{{ page.date | date('ll', locale) }}</time>
   </aside>
-  <div class="col-start-5 col-end-13 base-content">{{ content | safe }}</div>
+  <div class="col-start-5 col-end-13 markdown">{{ content | safe }}</div>
 </article>
 {% endblock %}

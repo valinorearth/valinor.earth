@@ -1,0 +1,13 @@
+.tpp-logo {
+  @apply border border-transparent rounded bg-white p-4 flex justify-center items-center transition duration-150 ease-in-out transform;
+
+  &:hover,
+  &:active,
+  &:focus {
+    @apply border-water-150 bg-water-100 -translate-y-1 shadow-md z-10;
+  }
+}
+
+.tpp-logo__img {
+  @apply flex-1 max-h-full object-contain;
+}

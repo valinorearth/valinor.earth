@@ -1,6 +1,19 @@
 @import "tailwind-base";
 
 @import "base";
+
+@import "component.aspect-ratio";
+@import "component.button";
+@import "component.frame";
+@import "component.logo-list";
+@import "component.markdown";
+@import "component.page";
+@import "component.page-footer";
+@import "component.section";
+@import "component.tpp-logo";
+
+@import "utils.print";
+
 @import "vendor.turbolinks";
 
 @import "tailwind-utils";
