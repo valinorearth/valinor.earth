@@ -1,33 +1,58 @@
 <footer class="page-footer">
   <div class="page-footer__wrapper frame">
-    <ul class="flex">
-      {% for id in site.primaryNav %}
-      {% for item in collections.all %}
-      {% if item.data.locale === locale and item.data.contentId === id %}
-      <li>
-        <a class="mr-4 font-bold text-gray-100 hover:text-gray-100 focus:text-gray-100 no-underline underline hover:underline focus:underline" href="{{ item.url }}">{{item.data.title}}</a>
-      </li>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 grid-flow-row-dense">
+      <div class="lg:col-start-7 lg:col-end-12">
+        <h2 class="font-bold text-gray-500 mb-2">Locations</h2>
+        <div class="md:flex md:-mx-2">
+          <div class="vcard md:px-2 md:w-1/2">
+            <span class="adr">
+              <span class="sr-only fn org">SAgri Co., Ltd</span>
+              <span class="street-address">725-1 Hikami</span>,
+              <span class="locality">Tamba</span>,
+              <span class="region">Hyogo</span>
+              <span class="postal-code">669-3602</span>
+            </span>
+          </div>
+          <div class="vcard mt-4 md:mt-0 md:px-2 md:w-1/2">
+            <span class="adr">
+              <span class="sr-only fn org">Sagri Bengaluru Pvt. Ltd.</span>
+              <span class="street-address">#180, 14th Cross, 8th Main, 6th Sector, HSR Layout</span>,
+              <span class="locality">Bangalore</span>
+              <span class="postal-code">560102</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <ul class="flex flex-wrap lg:col-start-1 lg:col-end-7 -mt-2">
+        {% for id in site.primaryNav %}
+          {% for item in collections.all %}
+            {% if item.data.locale === locale and item.data.contentId === id %}
+            <li class="mt-2">
+              <a class="mr-4 font-bold text-gray-100 hover:text-gray-100 focus:text-gray-100 no-underline underline hover:underline focus:underline" href="{{ item.url }}">{{item.data.title}}</a>
+            </li>
+            {% endif %}
+          {% endfor%}
+        {% endfor%}
+      </ul>
+
+      {% set numOfLocales = collections.all | numberOfLocalesForContentId('home') %}
+
+      {% if numOfLocales > 1 %}
+      <ul class="flex lg:col-start-1 lg:col-end-7">
+        {% for locale in site.locales %} {% for item in collections.all %} {% if
+        item.data.locale === locale.code and item.data.contentId and item.data.contentId === 'home' %}
+        <li>
+          <a class="mr-4 text-gray-100 hover:text-gray-100 no-underline hover:underline"
+             href="{{ item.url }}"
+             hreflang="{{ locale.code }}"
+             lang="{{ locale.code}} ">{{locale.label}}</a>
+        </li>
+        {% endif %} {% endfor%} {% endfor%}
+      </ul>
       {% endif %}
-      {% endfor%}
-      {% endfor%}
-    </ul>
 
-    {% set numOfLocales = collections.all | numberOfLocalesForContentId('home') %}
-
-    {% if numOfLocales > 1 %}
-    <ul class="flex mt-4">
-      {% for locale in site.locales %} {% for item in collections.all %} {% if
-      item.data.locale === locale.code and item.data.contentId and item.data.contentId === 'home' %}
-      <li>
-        <a class="mr-4 text-gray-100 hover:text-gray-100 no-underline hover:underline"
-           href="{{ item.url }}"
-           hreflang="{{ locale.code }}"
-           lang="{{ locale.code}} ">{{locale.label}}</a>
-      </li>
-      {% endif %} {% endfor%} {% endfor%}
-    </ul>
-    {% endif %}
-
-    <div class="mt-8 text-gray-500">&copy; {{buildTime | date('YYYY')}} {{site.title[locale]}}</div>
+    <div class="lg:col-span-12 text-gray-500">&copy; {{buildTime | date('YYYY')}} {{site.title[locale]}}</div>
+    </div>
   </div>
 </footer>
