@@ -1,7 +1,5 @@
 import { Controller } from "stimulus";
 
-const submitDisableClass = "opacity-50";
-
 export default class extends Controller {
   static targets = ["form", "successMessage", "failureMessage", "submit"];
 
@@ -30,12 +28,10 @@ export default class extends Controller {
 
   disableForm() {
     this.submitTarget.disabled = true;
-    this.formTarget.classList.add(submitDisableClass);
   }
 
   enableForm() {
     this.submitTarget.disabled = false;
-    this.formTarget.classList.remove(submitDisableClass);
   }
 
   get submitUrl() {

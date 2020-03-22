@@ -123,6 +123,24 @@ img {
   @apply mb-8 text-xl text-gray-600;
 }
 
+.button {
+  @apply bg-water-400 text-white font-bold py-2 px-4 rounded;
+  @apply transition duration-100 ease-in-out transform;
+}
+
+.button:hover,
+.button:focus {
+  @apply bg-water-600 outline-none shadow-outline;
+}
+
+.button:active {
+  @apply translate-y-1;
+}
+
+.button[disabled] {
+  @apply bg-gray-400;
+}
+
 /* print.css */
 @media print {
   body > *:not(main) {
