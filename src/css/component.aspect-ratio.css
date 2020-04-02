@@ -6,6 +6,10 @@
   @apply pb-1/2;
 }
 
+.aspect-ratio-4\/3 {
+  @apply pb-4/3;
+}
+
 .aspect-ratio__inner {
   @apply absolute top-0 left-0 h-full w-full;
 }
