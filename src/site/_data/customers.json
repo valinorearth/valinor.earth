@@ -3,5 +3,15 @@
     "name": "Government of Japan",
     "logoPath": "/img/logo-customer-japangov.png",
     "url": "https://www.japan.go.jp/"
+  },
+  {
+    "name": "City of Tsukuba",
+    "logoPath": "/img/logo-customer-citi-of-tsukuba.png",
+    "url": "http://www.tsukubainfo.jp"
+  },
+  {
+    "name": "Ibaraki Prefectural Government",
+    "logoPath": "/img/logo-customer-ibaraki-prefecture.png",
+    "url": "https://www.pref.ibaraki.jp/index.html"
   }
 ]
