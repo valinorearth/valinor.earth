@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const moment = require("moment");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const ErrorOverlay = require("eleventy-plugin-error-overlay");
 
 const isDev = process.env.NODE_ENV === "development";
 
@@ -26,6 +27,7 @@ const collectionFilterByFn = (key, value) => {
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(ErrorOverlay);
 
   eleventyConfig.addCollection("jaPosts", function(collection) {
     return collection
@@ -98,7 +100,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/img/**.ico": "/" });
 
   // Reload the page every time the JS/CSS are changed.
-  eleventyConfig.setBrowserSyncConfig({ files: [manifestPath] });
+  eleventyConfig.setBrowserSyncConfig({
+    ...eleventyConfig.browserSyncConfig,
+    files: [manifestPath],
+  });
 
   // A debug utility.
   eleventyConfig.addFilter("dump", obj => {
