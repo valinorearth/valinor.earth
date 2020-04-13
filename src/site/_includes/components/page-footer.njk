@@ -1,3 +1,5 @@
+{% import "macros/nav.njk" as navMacros %}
+{% set linkClasses = "mr-4 font-bold text-gray-100 hover:text-gray-100 focus:text-gray-100 no-underline underline hover:underline focus:underline" %}
 <footer class="page-footer">
   <div class="page-footer__wrapper frame">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 grid-flow-row-dense">
@@ -24,17 +26,7 @@
         </div>
       </div>
 
-      <ul class="flex flex-wrap lg:col-start-1 lg:col-end-7 -mt-2">
-        {% for id in site.primaryNav %}
-          {% for item in collections.all %}
-            {% if item.data.locale === locale and item.data.contentId === id %}
-            <li class="mt-2">
-              <a class="mr-4 font-bold text-gray-100 hover:text-gray-100 focus:text-gray-100 no-underline underline hover:underline focus:underline" href="{{ item.url }}">{{item.data.title}}</a>
-            </li>
-            {% endif %}
-          {% endfor%}
-        {% endfor%}
-      </ul>
+      {{navMacros.nav(site.secondaryNav, collections, locale, listClasses="flex flex-wrap lg:col-start-1 lg:col-end-7 -mt-2", listItemClasses="mt-2", linkClasses=linkClasses)}}
 
       {% set numOfLocales = collections.all | numberOfLocalesForContentId('home') %}
 

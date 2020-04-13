@@ -1,3 +1,15 @@
+const primaryNav = [
+  // contentIds from pages
+  "about",
+  "career",
+  {
+    title: "Blog",
+    url: "https://sagri.blog/",
+  },
+  "contact",
+];
+
+const secondaryNav = [...primaryNav];
 module.exports = {
   buildTime: new Date(),
   baseUrl: "https://sagri.co",
@@ -26,11 +38,6 @@ module.exports = {
     ja:
       "弊社は衛星データと農業データを用いて、独自の技術で農学的に農業を最適化するアプリケーションの提供を行っております。",
   },
-  primaryNav: [
-    // contentIds from pages
-    "about",
-    "career",
-    "blog",
-    "contact",
-  ],
+  primaryNav,
+  secondaryNav,
 };

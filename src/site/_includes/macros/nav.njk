@@ -1,0 +1,22 @@
+{% macro nav(navList, collections, locale, listClasses = "", listItemClasses = "", linkClasses="") %}
+<ul class="{{listClasses}}">
+  {% for id in navList %}
+    {% if (not id.title) and (not id.url) %}
+      {% for item in collections.all %}
+        {% if item.data.locale === locale and item.data.contentId === id %}
+        <li class="{{listItemClasses}}">
+          <a class="{{linkClasses}}" href="{{ item.url }}">{{item.data.title}}</a>
+        </li>
+        {% endif %}
+      {% endfor%}
+    {% else %}
+    <li class="{{listItemClasses}}">
+      <a
+      class="{{linkClasses}}"
+      href="{{ id.url }}"
+      target="_blank">{{id.title}}</a>
+    </li>
+    {% endif %}
+  {% endfor%}
+</ul>
+{% endmacro %}
