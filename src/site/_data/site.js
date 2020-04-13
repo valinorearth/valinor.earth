@@ -9,7 +9,7 @@ const primaryNav = [
   "contact",
 ];
 
-const secondaryNav = [...primaryNav];
+const secondaryNav = [...primaryNav, "privacy"];
 module.exports = {
   buildTime: new Date(),
   baseUrl: "https://sagri.co",
