@@ -1,19 +1,38 @@
-.markdown * + * {
-  @apply mt-4;
-}
+.markdown {
+  & * + * {
+    @apply mt-4;
+  }
 
-.markdown h1 {
-  @apply font-bold text-3xl;
-}
+  & h1 {
+    @apply font-bold text-3xl;
+  }
 
-.markdown h2 {
-  @apply font-bold text-xl;
-}
+  & h2 {
+    @apply font-bold text-xl;
+  }
 
-.markdown h3 {
-  @apply font-bold;
-}
+  & h3 {
+    @apply font-bold;
+  }
 
-.markdown h4 {
-  @apply text-gray-700;
+  & h4 {
+    @apply text-gray-700;
+  }
+
+  & ul,
+  & ol {
+    @apply pl-4;
+  }
+
+  & ul {
+    @apply list-disc;
+  }
+
+  & ol {
+    @apply list-decimal;
+  }
+
+  & li + li {
+    @apply mt-0;
+  }
 }
