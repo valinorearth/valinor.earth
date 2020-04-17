@@ -21,7 +21,7 @@
 
   & ul,
   & ol {
-    @apply pl-4;
+    @apply pl-8;
   }
 
   & ul {
@@ -34,5 +34,13 @@
 
   & li + li {
     @apply mt-0;
+  }
+
+  & blockquote {
+    @apply pl-8 border-l-4 border-gray-300 text-gray-600;
+  }
+
+  & pre {
+    @apply p-4 bg-gray-200 text-sm;
   }
 }
