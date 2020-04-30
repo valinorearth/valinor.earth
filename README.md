@@ -2,14 +2,22 @@
 
 ## Usage
 
+### Development
+
+```bash
+$ npm install
+$ npm run start # Generates and serve the pages
 ```
-npm run
-npm run start
+
+### Building
+
+```bash
+$ npm run build # Generates files which can be hosted
 ```
 
 ### File structure
 
-Everything in `src/site` will be converted by Eleventy - this is the input folder. The ouput folder is `dist`.
+Everything in `src/site` will be converted by Eleventy - this is the input folder. Once built, the files will be generated in `dist`.
 
 The `src/img` folder will be copied verbatim and you can reference any file by using the direct path, eg.
 
