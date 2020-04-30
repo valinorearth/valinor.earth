@@ -1,7 +1,11 @@
+/* Tailwind reset */
 @import "tailwind-base";
 
+/* Components */
 @import "base";
 
+/* Components */
+/* ↓ Add new components to this list ↓ */
 @import "component.aspect-ratio";
 @import "component.button";
 @import "component.frame";
@@ -12,8 +16,11 @@
 @import "component.section";
 @import "component.tpp-logo";
 
+/* Utils */
 @import "utils.print";
 
+/* Third party */
 @import "vendor.turbolinks";
 
+/* Tailwind utils */
 @import "tailwind-utils";

@@ -1,12 +1,12 @@
 {
-  "name": "elevenpack",
+  "name": "sagri.co",
   "version": "1.0.0",
-  "description": "Publish a website using Eleventy, webpack and PostCSS",
-  "author": "Adrian Gheorghe",
+  "description": "Source code for the sagri.co website",
+  "author": "Saneef Ansari",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/deviousdodo/elevenpack"
+    "url": "https://github.com/sagri/sagri.co"
   },
   "scripts": {
     "build": "NODE_ENV=production run-s clean build:assets build:site",
