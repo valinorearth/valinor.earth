@@ -3,16 +3,16 @@
 ## Build System
 
 - Uses [11ty](https://www.11ty.dev/docs/) to generate the static website.
-  - Multi-language support. Read [multilingual pages](#multilingual-pages)
+  - Multi-language support. Read [multilingual pages](#multilingual-pages) to add new content in different languages.
   - Generates RSS feed for blog posts.
 - CSS
-  - Includes [Tailwind CSS](https://tailwindcss.com)
+  - Includes [Tailwind CSS](https://tailwindcss.com).
     - Recommended to create separate components for repeatedly used set of Tailwind classes. See files begin with ‘component’ in `src/css`.
-  - Pre-processed with [PostCSS](https://postcss.org). Plugins included [postcss-import](https://github.com/postcss/postcss-import#readme), [postcss-nesting](https://github.com/jonathantneal/postcss-nesting#readme), [autoprefixer](https://github.com/postcss/autoprefixer#readme), and [cssnano](https://github.com/cssnano/cssnano)
+  - Pre-processed with [PostCSS](https://postcss.org). Plugins included [postcss-import](https://github.com/postcss/postcss-import#readme), [postcss-nesting](https://github.com/jonathantneal/postcss-nesting#readme), [autoprefixer](https://github.com/postcss/autoprefixer#readme), and [cssnano](https://github.com/cssnano/cssnano).
 - JavaScript
   - Uses [Babel](https://babeljs.io).
   - Includes [Stimulus](https://stimulusjs.org) and [Turbolinks](https://github.com/turbolinks/turbolinks).
-- Asset bundling with [Webpack](https://webpack.js.org)
+- Asset bundling with [Webpack](https://webpack.js.org).
 - Deployment
   - Uses [@static/discharge](https://github.com/brandonweiss/discharge) to deploy to S3.
 
@@ -50,7 +50,7 @@ The `src/js` and `src/css` folders will be bundled. The `index.js` and `index.cs
 The relationship between a page, or a blog post, written in two different languages is set up using the [front matter](https://www.11ty.dev/docs/data-frontmatter/). Two data values are necessary:
 
 1. `locale`: `en` for English and `ja` for Japanese.
-2. `contentId`: A unique identifier for the page written in different languages.
+2. `contentId`: A unique identifier for a content written in different languages.
 
 Once both `locale` and `contentId` are provided, the lanuage links on the header will link to the page with corresponding locale.
 
