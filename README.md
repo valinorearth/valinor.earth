@@ -1,6 +1,6 @@
 # valinor.earth
 
-## Build System
+## Build system
 
 - Uses [11ty](https://www.11ty.dev/docs/) to generate the static website.
   - Multi-language support. Read [multilingual pages](#multilingual-pages) to add new content in different languages.
@@ -14,7 +14,7 @@
   - Includes [Stimulus](https://stimulusjs.org) and [Turbolinks](https://github.com/turbolinks/turbolinks).
 - Asset bundling with [Webpack](https://webpack.js.org).
 - Deployment
-  - Uses [@static/discharge](https://github.com/brandonweiss/discharge) to deploy to S3.
+  - Uses [discharge](https://github.com/brandonweiss/discharge) to deploy to S3.
 
 ## Development
 
@@ -76,6 +76,12 @@ contentId: hello-world-2020
 
 ## Deployment
 
-The code gets deployed when pushed to `master` branch.
+We use [discharge](https://github.com/brandonweiss/discharge) to deploy to S3.
 
-In case if you want to deploy manually, set `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` environment variables. Then, run the command `npm run deploy` from the project directory.
+### Deploy manually
+
+Set `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` environment variables. Then, run the command `npm run deploy` from the project directory.
+
+### CI
+
+The Github CI is configured to deploy when pushed to `master` branch. See [configuration file](.github/workflows/deploy.yml)
