@@ -2,6 +2,7 @@
 src/**/_*
 
 src/site/ja
+src/site/ja/feed.njk
 src/site/en/blog.njk
 src/site/en/feed.njk
 src/site/posts
