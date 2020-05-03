@@ -5,6 +5,7 @@ const ErrorOverlay = require("eleventy-plugin-error-overlay");
 
 const collections = require("./eleventy/collections.js");
 const filters = require("./eleventy/filters.js");
+const transforms = require("./eleventy/transforms.js");
 
 const isDev = process.env.NODE_ENV === "development";
 
@@ -70,9 +71,15 @@ module.exports = function (eleventyConfig) {
     files: [manifestPath],
   });
 
+  // Filters
   Object.keys(filters).forEach((key) =>
     eleventyConfig.addFilter(key, filters[key])
   );
+
+  // Transform
+  Object.keys(transforms).forEach((transformName) => {
+    eleventyConfig.addTransform(transformName, transforms[transformName]);
+  });
 
   return {
     dir: {
