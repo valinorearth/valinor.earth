@@ -2,6 +2,7 @@ const { colors } = require("tailwindcss/defaultTheme");
 const brandColors = require("./tailwind.colors.js");
 
 module.exports = {
+  purge: ["./src/**/*.njk", "./src/**/*.html", "./src/**/*.md"],
   theme: {
     fontFamily: {
       display: ["Noto Serif JP", "serif"],
