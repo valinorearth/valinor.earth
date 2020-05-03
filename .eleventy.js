@@ -1,8 +1,10 @@
 const fs = require("fs");
 const path = require("path");
-const moment = require("moment");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const ErrorOverlay = require("eleventy-plugin-error-overlay");
+
+const collections = require("./eleventy/collections.js");
+const filters = require("./eleventy/filters.js");
 
 const isDev = process.env.NODE_ENV === "development";
 
@@ -14,83 +16,46 @@ const manifest = isDev
     }
   : JSON.parse(fs.readFileSync(manifestPath, { encoding: "utf8" }));
 
-const collectionSortFn = function(a, b) {
-  return b.date - a.date;
-};
-
-const collectionFilterByFn = (key, value) => {
-  return obj => {
-    if (Array.isArray(obj.data[key])) return obj.data[key].includes(value);
-    return obj.data[key] === value;
-  };
-};
-
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(ErrorOverlay);
 
-  eleventyConfig.addCollection("jaPosts", function(collection) {
-    return collection
-      .getAll()
-      .filter(collectionFilterByFn("tags", "posts"))
-      .filter(collectionFilterByFn("locale", "ja"))
-      .sort(collectionSortFn);
-  });
-
-  eleventyConfig.addCollection("enPosts", function(collection) {
-    return collection
-      .getAll()
-      .filter(collectionFilterByFn("tags", "posts"))
-      .filter(collectionFilterByFn("locale", "en"))
-      .sort(collectionSortFn);
-  });
-
-  eleventyConfig.addCollection("orderedTeam", function(collection) {
-    return collection
-      .getAll()
-      .filter(collectionFilterByFn("tags", "team"))
-      .sort(function(a, b) {
-        if (a.data.order > b.data.order) {
-          return -1;
-        }
-        if (a.data.order > b.data.order) {
-          return 1;
-        }
-
-        return 0;
-      });
-  });
+  Object.keys(collections).forEach((key) =>
+    eleventyConfig.addCollection(key, collections[key])
+  );
 
   // Layout aliases make templates more portable.
   eleventyConfig.addLayoutAlias("default", "layouts/default.njk");
 
   // Adds a universal shortcode to embed bundled CSS. In Nunjack templates: {% bundledCss %}
-  eleventyConfig.addShortcode("bundledCss", function() {
+  eleventyConfig.addShortcode("bundledCss", function () {
     return manifest["main.css"]
       ? `<link href="${manifest["main.css"]}" rel="stylesheet" data-turbolinks-track="reload" />`
       : "";
   });
 
   // Adds a universal shortcode to embed bundled JS. In Nunjack templates: {% bundledJs %}
-  eleventyConfig.addShortcode("bundledJs", function() {
+  eleventyConfig.addShortcode("bundledJs", function () {
     return manifest["main.js"]
       ? `<script src="${manifest["main.js"]}" async defer data-turbolinks-track="reload"></script>`
       : "";
   });
 
   // Adds a universal shortcode to get permalink by contentId and locale {% getPermalink contentId, locale%}
-  eleventyConfig.addShortcode("getPermalink", function(
+  eleventyConfig.addShortcode("getPermalink", function (
     collection,
     contentId,
     locale = "en"
   ) {
-    const localePages = collection.filter(p => p.data.locale === locale);
-    const page = localePages.find(p => p.data.contentId === contentId);
+    const localePages = collection.filter((p) => p.data.locale === locale);
+    const page = localePages.find((p) => p.data.contentId === contentId);
 
     if (page) return page.url;
   });
 
-  eleventyConfig.addPairedNunjucksShortcode("onDevelopment", function(content) {
+  eleventyConfig.addPairedNunjucksShortcode("onDevelopment", function (
+    content
+  ) {
     if (isDev) return content;
     return "";
   });
@@ -105,35 +70,9 @@ module.exports = function(eleventyConfig) {
     files: [manifestPath],
   });
 
-  // A debug utility.
-  eleventyConfig.addFilter("dump", obj => {
-    console.log(obj);
-    return obj;
-  });
-
-  eleventyConfig.addFilter("removeDir", (path, level = 1) => {
-    const arr = path.split("/");
-
-    return arr.slice(level + 1).join("/");
-  });
-
-  eleventyConfig.addFilter("date", (date, format, locale = "en") => {
-    return moment(date)
-      .locale(locale)
-      .format(format);
-  });
-
-  eleventyConfig.addFilter("numberOfLocalesForContentId", (all, contentId) => {
-    const pages = all.reduce((acc, p) => {
-      if (p.data.contentId === contentId) {
-        return [...acc, p];
-      }
-      return acc;
-    }, []);
-
-    let locales = pages.reduce((acc, page) => [...acc, page.data.locale], []);
-    return [...new Set(locales)].length;
-  });
+  Object.keys(filters).forEach((key) =>
+    eleventyConfig.addFilter(key, filters[key])
+  );
 
   return {
     dir: {
