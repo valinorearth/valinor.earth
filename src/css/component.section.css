@@ -1,7 +1,7 @@
 .section {
-  @apply border-t-4 pt-2;
+  @apply border-t-4 pt-4;
 }
 
 .section__title {
-  @apply mb-8 text-xl text-gray-600;
+  @apply -mt-2 mb-8 text-xl text-gray-600;
 }
