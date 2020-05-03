@@ -1,5 +1,5 @@
 html {
-  @apply text-xl leading-normal font-body bg-white;
+  @apply text-gray-900 text-xl leading-normal font-body bg-white;
 }
 
 html:lang("ja") {
