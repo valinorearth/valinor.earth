@@ -40,4 +40,10 @@ module.exports = {
   },
   primaryNav,
   secondaryNav,
+  textStrings: {
+    "Learn more": {
+      en: "Learn more",
+      ja: "もっと詳しく知る",
+    },
+  },
 };

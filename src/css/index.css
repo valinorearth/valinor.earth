@@ -15,6 +15,7 @@
 @import "component.page-footer";
 @import "component.section";
 @import "component.tpp-logo";
+@import "component.product-card";
 
 /* Utils */
 @import "utils.print";

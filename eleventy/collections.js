@@ -9,7 +9,25 @@ const collectionFilterByFn = (key, value) => {
   };
 };
 
+const sortByOrderFn = function (a, b) {
+  if (a.data.order > b.data.order) {
+    return -1;
+  }
+  if (a.data.order > b.data.order) {
+    return 1;
+  }
+
+  return 0;
+};
+
 module.exports = {
+  products: function (collection) {
+    return collection
+      .getAll()
+      .filter(collectionFilterByFn("tags", "products"))
+      .sort(sortByOrderFn);
+  },
+
   jaPosts: function (collection) {
     return collection
       .getAll()
@@ -30,15 +48,6 @@ module.exports = {
     return collection
       .getAll()
       .filter(collectionFilterByFn("tags", "team"))
-      .sort(function (a, b) {
-        if (a.data.order > b.data.order) {
-          return -1;
-        }
-        if (a.data.order > b.data.order) {
-          return 1;
-        }
-
-        return 0;
-      });
+      .sort(sortByOrderFn);
   },
 };

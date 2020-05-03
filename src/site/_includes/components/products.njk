@@ -1,0 +1,18 @@
+<ul class="products max-w-2xl mx-auto">
+{% for product in collections.products %}
+  {% if product.data.locale === locale %}
+  <li class="product-card">
+    <div class="product-card__cover">
+      <div class="aspect-ratio">
+        <img class="product-card__img aspect-ratio__inner object-cover" src="{{product.data.coverImage | url}}" alt="Cover photo for {{product.data.title}}">
+      </div>
+    </div>
+    <div class="product-card__content">
+      <h3 class="product-card__title">{{product.data.title}}</h3>
+      <div>{{product.data.summary | safe}}</div>
+      <a class="product-card__cta" href="{{product.url}}">{{ site.textStrings["Learn more"][locale]}} →</a>
+    </div>
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
