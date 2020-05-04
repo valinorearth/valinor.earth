@@ -5,17 +5,18 @@
 @import "base";
 
 /* Components */
-/* ↓ Add new components to this list ↓ */
+/* ↓ Add new components to this list, alphabetically ↓ */
 @import "component.aspect-ratio";
 @import "component.button";
 @import "component.frame";
 @import "component.logo-list";
 @import "component.markdown";
+@import "component.media-object";
 @import "component.page";
 @import "component.page-footer";
+@import "component.product-card";
 @import "component.section";
 @import "component.tpp-logo";
-@import "component.product-card";
 
 /* Utils */
 @import "utils.text-shadow";
