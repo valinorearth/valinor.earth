@@ -5,15 +5,22 @@ permalink: index.html
 layout: layouts/home.njk
 ---
 
-<div class="hero -mx-4 md:mx-0 px-4 md:rounded md:px-16 py-8 md:pt-32 md:pb-16 bg-water-700 shadow-inner">
-  <div class="max-w-lg">
-    <h1 class="sr-only">{{site.title[locale]}}</h1>
-    <p class="font-bold text-gray-100 text-lg md:text-2xl">Striving to fulfill lives of farmers</p>
-    <p class="mt-2 text-gray-200 text-sm md:text-base">Sagri is an Asia-focused AgTech Startup, helping farmers live a happier life. We help farmers with easy-to-access credit and educate them in increasing their earning potential. We leverage satellite imagery and our proprietory soil sampling technology.</p>
+<div class="max-w-2xl mx-auto my-16 md:my-24">
+  <div class="media-object">
+    <div class="media-object__media">
+      <img class="w-48" src="{{"img/illustration-field-frame.svg" | url}}" alt="Illustration of trees">
+    </div>
+    <div class="media-object__text">
+      <div class="">
+        <h1 class="sr-only">{{site.title[locale]}}</h1>
+        <p class="font-bold text-lg md:text-2xl">Striving to fulfill lives of farmers</p>
+        <p class="mt-2 text-sm md:text-base">Sagri is an Asia-focused AgTech Startup, helping farmers live a happier life. We help farmers with easy-to-access credit and educate them in increasing their earning potential. We leverage satellite imagery and our proprietory soil sampling technology.</p>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="section mt-8 py-8">
+<div class="section section--keylined mt-8">
   <h2 class="section__title text-center">Our Initiatives for Farmers</h2>
   {% include "components/products.njk" %}
 </div>
