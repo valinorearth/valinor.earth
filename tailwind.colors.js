@@ -1,68 +1,63 @@
 module.exports = {
-  // ColorBox to Tailwind naming mapping
-  // 0 -> 100
-  // 5 -> 150
-  // 10 -> 200
+  // Earth, Water and Fire
+  // Colorcolor URL: "https://colorcolor.in/#('paletteParams':('steps':10,'paletteIndex':2,'swatchIndex':9,'params':~('hue':('start':242.5,'end':249.25,'ease':'quadIn'),'sat':('start':74.75,'end':92.75,'ease':'quadOut'),'lig':('start':99,'end':24.5,'ease':'quadOut')),('hue':('start':37,'end':32.5,'ease':'quadIn'),'sat':('start':61.25,'end':93.5,'ease':'quadOut'),'lig':('start':99,'end':24.5,'ease':'quadOut')),('hue':('start':54.75,'end':72.75,'ease':'quadIn'),'sat':('start':78,'end':100,'ease':'quadOut'),'lig':('start':99,'end':18.25,'ease':'quadOut'));),'settings':('overlayContrast':false,'overlayHex':true,'refColorsRaw':'#CC7722,_#0E78BE,_#F0B81A,_#CFDFF6,_#F3EBDE,_#2a4365','colorSpace':'hsluv'))"
+  // Colorcolor to Tailwind naming mapping
+  // 10 -> 100
+  // 20 -> 200
+  // 30 -> 300
   // ...
   // 90 -> 900
+  // 100 -> Ignored
   earth: {
-    // https://www.colorbox.io/#steps=9#hue_start=33#hue_end=24#hue_curve=easeInQuad#sat_start=4#sat_end=82#sat_curve=easeOutQuad#sat_rate=128#lum_start=100#lum_end=24#lum_curve=easeOutQuad#lock_hex=#CC7722#minor_steps_map=0
-
-    "100": "#fff9f2",
-    "150": "#fce8d1",
-    "200": "#f8d7b0",
-    "300": "#efb675",
-    "400": "#e09545",
-    "500": "#cc7722",
-    "600": "#b35d0d",
-    "700": "#924301",
-    "800": "#692d00",
-    "900": "#3d1800",
+    "100": "#fcf7f5",
+    "200": "#f9eae3",
+    "300": "#f4d6c7",
+    "400": "#f0bb9e",
+    "500": "#ef9a5d",
+    "600": "#d18245",
+    "700": "#b06a32", // Nearest matched to reference color #CC7722
+    "800": "#915321",
+    "900": "#743f13",
   },
   water: {
-    // https://www.colorbox.io/#steps=9#hue_start=197#hue_end=225#hue_curve=easeInQuad#sat_start=3#sat_end=82#sat_curve=easeOutQuad#sat_rate=130#lum_start=100#lum_end=17#lum_curve=easeOutQuad#lock_hex=#0E78BE#minor_steps_map=0
-
-    "100": "#f5fcff",
-    "150": "#cdedf9",
-    "200": "#a6ddf4",
-    "300": "#65bfe8",
-    "400": "#329dd6",
-    "500": "#0e78be",
-    "600": "#0058a5",
-    "700": "#003a83",
-    "800": "#001e59",
-    "900": "#000b2b",
+    "100": "#f5f8fd",
+    "200": "#e4eefb",
+    "300": "#c9def7",
+    "400": "#a5caf4",
+    "500": "#73b3f1",
+    "600": "#449adf",
+    "700": "#3380bd", // Nearest matched to reference color #0E78BE
+    "800": "#24669d",
+    "900": "#174f7f",
   },
 
   fire: {
-    //https://www.colorbox.io/#steps=9#hue_start=40#hue_end=46#hue_curve=easeInQuad#sat_start=4#sat_end=82#sat_curve=easeOutQuad#sat_rate=122#lum_start=100#lum_end=37#lum_curve=easeOutQuad#lock_hex=#F0B81A#minor_steps_map=0
-
-    "100": "#fffbf3",
-    "150": "#fff2d3",
-    "200": "#ffebb2",
-    "300": "#ffd875",
-    "400": "#fbc741",
-    "500": "#f0b81a",
-    "600": "#d5a009",
-    "700": "#b28601",
-    "800": "#896800",
-    "900": "#5e4800",
+    "100": "#fdf7f0",
+    "200": "#fbe9d4",
+    "300": "#f9d3a1",
+    "400": "#f1b94e",
+    "500": "#d0a03d",
+    "600": "#ae862c",
+    "700": "#8b6d1c",
+    "800": "#6a550d",
+    "900": "#4d3f03",
   },
 
+  // Wind and Space
+  // Colorcolor URL: "https://colorcolor.in/#('paletteParams':('steps':5,'paletteIndex':1,'swatchIndex':0,'params':~('hue':('start':244.75,'end':244.75,'ease':'quadIn'),'sat':('start':38,'end':89,'ease':'quadOut'),'lig':('start':100,'end':79.25,'ease':'quadOut')),('hue':('start':63.75,'end':63.75,'ease':'quadIn'),'sat':('start':44,'end':81,'ease':'quadOut'),'lig':('start':99,'end':90.25,'ease':'quadOut'));),'settings':('overlayContrast':false,'overlayHex':true,'refColorsRaw':'#F3EBDE,_#CFDFF6','colorSpace':'hsluv'))"
+  // Colorcolor numbers mapped to corresponding Tailwind naming
   wind: {
-    // https://www.colorbox.io/#steps=3#hue_start=215#hue_end=228#hue_curve=easeInQuad#sat_start=3#sat_end=82#sat_curve=easeOutQuad#sat_rate=120#lum_start=59#lum_end=35#lum_curve=easeOutSine#lock_hex=#CFDFF6#minor_steps_map=0
-
-    "100": "#cfdff6",
-    "200": "#6a91ce",
-    "300": "#2050a6",
-    "400": "#011359",
+    "100": "#fafbfc",
+    "200": "#ebf0f8",
+    "300": "#d6e2f4", // Nearest matched to reference color #CFDFF6
+    "400": "#bbd4f5",
+    "500": "#9fc8f9",
   },
   space: {
-    // https://www.colorbox.io/#steps=3#hue_start=37#hue_end=28#hue_curve=easeInQuad#sat_start=4#sat_end=66#sat_curve=easeOutQuad#sat_rate=107#lum_start=100#lum_end=11#lum_curve=easeOutQuad#lock_hex=#F3EBDE#minor_steps_map=0
-
-    "100": "#f3ebde",
-    "200": "#ddc095",
-    "300": "#c79756",
-    "400": "#1c1108",
+    "100": "#fdfaf6",
+    "200": "#fbf5ec",
+    "300": "#f9eedb", // Nearest matched to reference color #F3EBDE
+    "400": "#f9e7c6",
+    "500": "#fae0ae",
   },
 };

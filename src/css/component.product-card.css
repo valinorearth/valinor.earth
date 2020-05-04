@@ -1,10 +1,19 @@
 .product-card {
   @apply relative grid gap-4;
   @apply p-4 text-gray-700 text-sm bg-white border border-gray-200 rounded shadow-md;
+  @apply transition duration-150 ease-in-out transform;
 
   @screen md {
     @apply p-8 gap-8;
     grid-template-columns: 1fr 2fr;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    @screen md {
+      @apply scale-105 -translate-y-1 shadow-lg;
+    }
   }
 
   & + .product-card {

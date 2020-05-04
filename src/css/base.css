@@ -1,5 +1,11 @@
+*,
+::before,
+::after {
+  @apply border-gray-400;
+}
+
 html {
-  @apply text-gray-900 text-xl leading-normal font-body bg-white;
+  @apply text-gray-900 text-xl leading-normal font-body bg-space-100;
 }
 
 html:lang("ja") {
@@ -7,13 +13,13 @@ html:lang("ja") {
 }
 
 a {
-  @apply text-water-500 underline;
+  @apply text-water-700 underline;
 }
 
 a:hover,
 a:focus,
 a:active {
-  @apply text-water-700;
+  @apply text-water-900;
 }
 
 img {

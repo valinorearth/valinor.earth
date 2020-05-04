@@ -1,5 +1,5 @@
 .tpp-logo {
-  @apply border border-transparent rounded bg-gray-100 p-4 flex justify-center items-center transition duration-150 ease-in-out transform;
+  @apply border border-transparent rounded bg-white p-4 flex justify-center items-center transition duration-150 ease-in-out transform;
 
   &:hover,
   &:active,
