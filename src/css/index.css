@@ -18,6 +18,7 @@
 @import "component.product-card";
 
 /* Utils */
+@import "utils.text-shadow";
 @import "utils.print";
 
 /* Third party */
