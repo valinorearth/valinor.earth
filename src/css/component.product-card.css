@@ -1,6 +1,6 @@
 .product-card {
   @apply relative grid gap-4;
-  @apply p-4 text-gray-700 text-sm bg-white border border-gray-300 rounded shadow-md;
+  @apply p-4 text-gray-700 text-sm bg-white border border-gray-300 rounded shadow;
   @apply transition duration-150 ease-in-out transform;
 
   @screen md {
@@ -12,7 +12,7 @@
   &:focus,
   &:active {
     @screen md {
-      @apply scale-105 -translate-y-1 shadow-lg;
+      @apply scale-105 shadow-lg;
     }
   }
 
