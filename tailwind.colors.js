@@ -35,7 +35,7 @@ module.exports = {
     "100": "#fdf7f0",
     "200": "#fbe9d4",
     "300": "#f9d3a1",
-    "400": "#f1b94e",
+    "400": "#f1b94e", // Nearest matched to reference color #F0B81A
     "500": "#d0a03d",
     "600": "#ae862c",
     "700": "#8b6d1c",
