@@ -1,5 +1,5 @@
 .media-object {
-  @apply flex flex-wrap items-start -m-2;
+  @apply flex flex-wrap -m-2;
 }
 
 .media-object__media,
@@ -26,4 +26,8 @@
   & .media-object__text {
     @apply p-4;
   }
+}
+
+.media-object--no-stretch {
+  @apply items-start;
 }
