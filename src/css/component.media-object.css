@@ -9,6 +9,8 @@
 }
 
 .media-object__media {
+  /* Else, Safari the media (img, svg,...) height extends */
+  @apply flex items-start;
   flex-basis: content;
   flex-grow: 1;
 }
