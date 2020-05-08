@@ -1,15 +1,16 @@
 .button {
-  @apply bg-water-600 text-white font-bold py-2 px-4 rounded;
+  @apply inline-block py-2 px-4;
+  @apply no-underline bg-water-600 text-white font-bold rounded;
   @apply transition duration-100 ease-in-out transform;
 }
 
 .button:hover,
 .button:focus {
-  @apply bg-water-800 outline-none shadow-outline;
+  @apply text-white bg-water-700 outline-none shadow-outline;
 }
 
 .button:active {
-  @apply translate-y-1;
+  @apply shadow-inner;
 }
 
 .button[disabled] {
