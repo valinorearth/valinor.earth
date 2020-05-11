@@ -1,5 +1,5 @@
 .page {
-  @apply min-h-screen pb-16;
+  @apply pb-16;
 }
 
 .page__title {
