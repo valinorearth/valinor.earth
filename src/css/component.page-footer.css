@@ -1,4 +1,5 @@
 .page-footer {
+  @apply mt-auto;
   @apply text-sm bg-gray-800 text-gray-200;
 }
 

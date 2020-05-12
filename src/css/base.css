@@ -4,17 +4,16 @@
   @apply border-gray-400;
 }
 
-html,
-body {
-  @apply h-full flex flex-col justify-start;
-}
-
 html {
   @apply text-gray-900 text-xl leading-normal font-body bg-space-100;
 }
 
 html:lang("ja") {
   @apply leading-loose;
+}
+
+body {
+  @apply min-h-screen flex flex-col;
 }
 
 a {
