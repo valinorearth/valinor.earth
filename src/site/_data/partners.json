@@ -18,5 +18,10 @@
     "name": "Gromor",
     "logoPath": "/img/logo-partner-gromor.png",
     "url": "https://gromor.in/"
+  },
+  {
+    "name": "Rang De",
+    "logoPath": "/img/logo-partner-rangde.svg",
+    "url": "https://www.rangde.org"
   }
 ]
