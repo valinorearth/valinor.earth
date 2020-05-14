@@ -2,7 +2,10 @@
   {% for p in partners %}
     <li class="aspect-ratio aspect-ratio-1/2">
       <div class="aspect-ratio__inner">
-        <a class="tpp-logo w-full h-full" href="{{p.url}}" target="_blank">
+        <a class="tpp-logo w-full h-full"
+           title="{{p.name}}"
+           href="{{p.url}}"
+           target="_blank">
           <img class="tpp-logo__img" width="120" src="{{p.logoPath | url}}" alt="Logo of {{p.name}}">
         </a>
       </div>
