@@ -1,23 +1,19 @@
 const primaryNav = [
-  // contentIds from pages
+  // ContentIds from pages
   "about",
-  "career",
-  {
-    title: "Blog",
-    url: "https://sagri.blog/",
-  },
+  "blog",
   "contact",
 ];
 
 const secondaryNav = [...primaryNav, "privacy"];
 module.exports = {
   buildTime: new Date(),
-  baseUrl: "https://sagri.co",
-  name: "Sagri",
-  email: "hello@sagri.co",
-  twitter: "sagriearth",
-  linkedin: "sagri-co-ltd",
-  facebook: "SAgri-1831194850515104",
+  baseUrl: "https://valinor.earth",
+  name: "Valinor Earth",
+  email: "hello@valinor.earth",
+  twitter: "valinorearth",
+  // Linkedin: "",
+  // facebook: "",
   locales: [
     {
       code: "en",
@@ -29,14 +25,8 @@ module.exports = {
     },
   ],
   title: {
-    en: "Sagri",
-    ja: "Sagri株式会社",
-  },
-  description: {
-    en:
-      "We use satellite imagery data and soil testing technology to provide applications that optimize productivity for farmers.",
-    ja:
-      "弊社は衛星データと農業データを用いて、独自の技術で農学的に農業を最適化するアプリケーションの提供を行っております。",
+    en: "Valinor Earth",
+    ja: "Valinor Earth",
   },
   primaryNav,
   secondaryNav,
