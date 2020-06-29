@@ -9,30 +9,30 @@
     "url": "https://github.com/sagri/sagri.co"
   },
   "scripts": {
-    "build": "NODE_ENV=production run-s clean build:assets build:site",
+    "build": "NODE_ENV=production run-s --print-name clean build:assets build:site",
     "build:assets": "webpack --mode production",
     "build:site": "eleventy",
     "clean": "rm -rf ./dist",
-    "predev": "run-s clean",
-    "dev": "NODE_ENV=development run-p dev:*",
+    "predev": "run-s --print-name clean",
     "dev:assets": "webpack --mode development --watch",
     "dev:site": "eleventy --serve",
-    "test": "run-s build"
+    "start": "NODE_ENV=development run-p --print-name dev:*",
+    "test": "run-s --print-name build"
   },
   "dependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
-    "@babel/core": "^7.9.6",
-    "@babel/plugin-proposal-class-properties": "^7.8.3",
-    "@babel/preset-env": "^7.9.6",
-    "autoprefixer": "^9.7.6",
+    "@babel/core": "^7.10.3",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/preset-env": "^7.10.3",
+    "autoprefixer": "^9.8.4",
     "babel-loader": "^8.1.0",
-    "css-loader": "^3.5.3",
+    "css-loader": "^3.6.0",
     "cssnano": "^4.1.10",
     "eleventy-plugin-error-overlay": "^0.1.2",
     "htmlnano": "^0.2.5",
     "mini-css-extract-plugin": "^0.9.0",
-    "moment": "^2.25.3",
+    "moment": "^2.27.0",
     "npm-run-all": "^4.1.5",
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
@@ -41,7 +41,7 @@
     "tailwindcss": "^1.4.6",
     "turbolinks": "^5.2.0",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11",
+    "webpack-cli": "^3.3.12",
     "webpack-manifest-plugin": "^2.2.0"
   },
   "husky": {
@@ -54,7 +54,7 @@
   },
   "devDependencies": {
     "husky": "^4.2.5",
-    "lint-staged": "^10.2.2",
+    "lint-staged": "^10.2.11",
     "prettier": "^2.0.5"
   }
 }
