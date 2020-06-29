@@ -41,6 +41,12 @@
     "postcss-loader": "^3.0.0",
     "postcss-nesting": "^7.0.1",
     "stimulus": "^1.1.1",
+    "stylelint": "^13.6.1",
+    "stylelint-config-hudochenkov": "^5.0.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-prettier": "^1.1.2",
     "tailwindcss": "^1.4.6",
     "turbolinks": "^5.2.0",
     "webpack": "^4.43.0",
@@ -54,6 +60,7 @@
   },
   "lint-staged": {
     "*.js": "eslint --fix",
+    "*.css": "stylelint --fix",
     "*.{md,yml,json}": "prettier --write"
   },
   "devDependencies": {
