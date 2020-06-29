@@ -12,13 +12,12 @@
   {% bundledCss %}
   {% bundledJs %}
 
-  <title>{% if title %}{{ title }}{% else %}{{site.title}}{% endif %}</title>
+  <title>{% if title %}{{ title }}{% else %}{{site.title[locale]}}{% endif %}</title>
 </head>
 
 <body {% onDevelopment %}data-turbolinks="false"{% endonDevelopment %}>
 <a href="#main" data-turbolinks="false">skip to main content</a>
 {% include "components/page-header.njk" %}
-
 <main id="main" tabindex="-1" class="frame page">
   {% block content %}{% endblock %}
 </main>
