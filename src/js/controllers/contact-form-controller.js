@@ -15,12 +15,12 @@ export default class extends Controller {
       mode: "no-cors",
       body: data,
     })
-      .then(d => {
+      .then(() => {
         this.successMessageTarget.classList.remove("hidden");
         this.formTarget.reset();
         this.enableForm();
       })
-      .catch(e => {
+      .catch(() => {
         this.enableForm();
         this.failureMessageTarget.classList.remove("hidden");
       });
