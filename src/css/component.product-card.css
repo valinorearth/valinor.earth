@@ -5,6 +5,7 @@
 
   @screen md {
     @apply p-8 gap-8;
+
     grid-template-columns: 1fr 2fr;
   }
 
@@ -23,9 +24,6 @@
 
 .product-card__content {
   @apply flex flex-col items-start;
-}
-
-.product-card__cover {
 }
 
 .product-card__img {
@@ -47,6 +45,7 @@
 
   &::after {
     @apply absolute inset-0;
+
     content: "";
   }
 }

@@ -1,4 +1,4 @@
-// From https://github.com/primer/css/blob/3f72b945d613a3c8def35d970cc2f20ee44f6f4e/src/utilities/typography.scss#L237
+/* From https://github.com/primer/css/blob/3f72b945d613a3c8def35d970cc2f20ee44f6f4e/src/utilities/typography.scss#L237 */
 
 .text-shadow-dark {
   text-shadow: 0 1px 1px rgba(27, 31, 35, 0.25),

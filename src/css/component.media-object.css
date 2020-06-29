@@ -11,13 +11,14 @@
 .media-object__media {
   /* Else, Safari the media (img, svg,...) height extends */
   @apply flex items-start;
-  flex-basis: content;
+
   flex-grow: 1;
+  flex-basis: content;
 }
 
 .media-object__text {
-  flex-basis: 0;
   flex-grow: 999;
+  flex-basis: 0;
   min-width: 66.666%;
 }
 

@@ -33,6 +33,7 @@ img {
 /* purgecss ignore */
 [href="#main"] {
   @apply absolute top-0 z-50;
+
   right: 100%;
 }
 

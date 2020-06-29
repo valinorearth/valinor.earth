@@ -5,6 +5,7 @@
 @import "base";
 
 /* Components */
+
 /* ↓ Add new components to this list, alphabetically ↓ */
 @import "component.aspect-ratio";
 @import "component.button";
