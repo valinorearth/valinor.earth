@@ -13,18 +13,12 @@
   - Uses [Babel](https://babeljs.io).
   - Includes [Stimulus](https://stimulusjs.org) and [Turbolinks](https://github.com/turbolinks/turbolinks).
 - Asset bundling with [Webpack](https://webpack.js.org).
-- Deployment
-  - Uses [discharge](https://github.com/brandonweiss/discharge) to deploy to S3.
 
 ## Development
 
 ```bash
 $ npm install
-<<<<<<< HEAD
 $ npm run start # Generates and serve the pages
-=======
-$ npm run dev # Generates and serve pages
->>>>>>> doc(readme): updates tech nitty-gritties
 ```
 
 ### Building
