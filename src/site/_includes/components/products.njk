@@ -9,8 +9,7 @@
     </div>
     <div class="product-card__content">
       <h3 class="product-card__title">{{product.data.title}}</h3>
-      <div>{{product.data.summary | safe}}</div>
-      <a class="product-card__cta" href="{{product.url}}">{{ site.textStrings["Learn more"][locale]}} →</a>
+      <div class="space-y-4">{{product.templateContent | safe}}</div>
     </div>
   </li>
   {% endif %}

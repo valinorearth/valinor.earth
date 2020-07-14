@@ -1,20 +1,14 @@
 .product-card {
   @apply relative grid gap-4;
-  @apply p-4 text-gray-700 text-sm bg-white border border-gray-300 rounded shadow;
+  @apply p-4;
+  @apply text-gray-700 text-sm;
+  @apply bg-white border border-gray-300 rounded;
   @apply transition duration-150 ease-in-out transform;
 
   @screen md {
     @apply p-8 gap-8;
 
     grid-template-columns: 1fr 2fr;
-  }
-
-  &:hover,
-  &:focus,
-  &:active {
-    @screen md {
-      @apply scale-105 shadow-lg;
-    }
   }
 
   & + .product-card {
@@ -36,16 +30,4 @@
 
 .product-card__cta {
   @apply mt-auto no-underline;
-
-  &:hover,
-  &:focus,
-  &:active {
-    @apply underline;
-  }
-
-  &::after {
-    @apply absolute inset-0;
-
-    content: "";
-  }
 }
