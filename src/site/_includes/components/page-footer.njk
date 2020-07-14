@@ -3,19 +3,6 @@
 <footer class="page-footer">
   <div class="page-footer__wrapper frame">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 grid-flow-row-dense">
-      <div class="lg:col-start-7 lg:col-end-12">
-        <h2 class="font-bold text-gray-500 mb-2">Locations</h2>
-        <div class="md:flex md:-mx-2">
-          <div class="vcard mt-4 md:mt-0 md:px-2 md:w-1/2">
-            <span class="adr">
-              <span class="sr-only fn org">{{site.title[locale]}}</span>
-              <span class="street-address">#180, 14th Cross, 8th Main, 6th Sector, HSR Layout</span>,
-              <span class="locality">Bangalore</span>
-              <span class="postal-code">560102</span>
-            </span>
-          </div>
-        </div>
-      </div>
 
       {{navMacros.nav(site.secondaryNav, collections, locale, listClasses="flex flex-wrap lg:col-start-1 lg:col-end-7 -mt-2", listItemClasses="mt-2", linkClasses=linkClasses)}}
 
