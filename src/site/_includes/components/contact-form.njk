@@ -1,0 +1,50 @@
+<div
+  data-controller="contact-form"
+  data-contact-form-url="https://formspree.io/xqklbrbz">
+  <form data-target="contact-form.form" data-action="contact-form#send">
+    <div data-target="contact-form.failureMessage" class="hidden bg-red-100 border border-red-400 text-red-700 px-4 py-3 mb-4 rounded relative" role="alert">
+      <strong class="font-bold">Uh oh!</strong>
+      <span class="block sm:inline">Unable to send the message right now. Try again later, or <a href="mailto:{{site.email}}">email us</a> right away.</span>
+    </div>
+
+    <div data-target="contact-form.successMessage" class="hidden bg-green-100 border border-green-400 text-green-700 px-4 py-3 mb-4 rounded relative" role="alert">
+      <strong class="font-bold">Thank you!</strong>
+      <span class="block sm:inline">We will get back to you very soon.</span>
+    </div>
+
+    <div>
+      <label class="block text-gray-700 text-sm mb-2" for="name">Name</label>
+      <input id="name"
+        name="name"
+        type="text"
+        inputmode="text"
+        autocomplete="name"
+        required
+        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+    </div>
+
+    <div class="mt-6">
+      <label class="block text-gray-700 text-sm mb-2" for="email">Email</label>
+      <input
+        id="email"
+        name="email"
+        type="email"
+        inputmode="email"
+        autocomplete="email"
+        required
+        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+    </div>
+
+    <div class="mt-6">
+      <label class="block text-gray-700 text-sm mb-2" for="message">Message</label>
+      <textarea
+        name="message" id="message" cols="30" rows="10"
+        required
+        class="h-32 resize-none appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+    </div>
+
+    <input type="text" name="_gotcha" style="display: none;" />
+
+    <button data-target="contact-form.submit" class="mt-6 button" type="submit">Send</button>
+  </form>
+</div>

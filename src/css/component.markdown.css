@@ -1,0 +1,46 @@
+.markdown {
+  & * + * {
+    @apply mt-4;
+  }
+
+  & h1 {
+    @apply font-bold text-3xl;
+  }
+
+  & h2 {
+    @apply font-bold text-xl;
+  }
+
+  & h3 {
+    @apply font-bold;
+  }
+
+  & h4 {
+    @apply text-gray-700;
+  }
+
+  & ul,
+  & ol {
+    @apply pl-8;
+  }
+
+  & ul {
+    @apply list-disc;
+  }
+
+  & ol {
+    @apply list-decimal;
+  }
+
+  & li + li {
+    @apply mt-0;
+  }
+
+  & blockquote {
+    @apply pl-8 border-l-4 border-gray-300 text-gray-700;
+  }
+
+  & pre {
+    @apply p-4 bg-gray-200 text-sm;
+  }
+}

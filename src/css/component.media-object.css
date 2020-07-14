@@ -1,0 +1,36 @@
+.media-object {
+  @apply flex flex-wrap -m-2;
+}
+
+.media-object__media,
+.media-object__text {
+  @apply p-2;
+  @apply flex justify-center;
+}
+
+.media-object__media {
+  /* Else, Safari the media (img, svg,...) height extends */
+  @apply flex items-start;
+
+  flex-grow: 1;
+  flex-basis: content;
+}
+
+.media-object__text {
+  flex-grow: 999;
+  flex-basis: 0;
+  min-width: 66.666%;
+}
+
+.media-object--roomy {
+  @apply -m-4;
+
+  & .media-object__media,
+  & .media-object__text {
+    @apply p-4;
+  }
+}
+
+.media-object--no-stretch {
+  @apply items-start;
+}

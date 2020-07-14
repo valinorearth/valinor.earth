@@ -1,0 +1,18 @@
+.button {
+  @apply inline-block py-2 px-4;
+  @apply no-underline bg-water-600 text-white font-bold rounded;
+  @apply transition duration-100 ease-in-out transform;
+}
+
+.button:hover,
+.button:focus {
+  @apply text-white bg-water-700 outline-none shadow-outline;
+}
+
+.button:active {
+  @apply shadow-inner;
+}
+
+.button[disabled] {
+  @apply bg-gray-400;
+}

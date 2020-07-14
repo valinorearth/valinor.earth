@@ -1,0 +1,11 @@
+{% extends "layouts/base.njk" %}
+
+{% block content %}
+  <ul>
+    {% for post in collections.posts %}
+      {% if post.data.locale === locale %}
+      <li>{{ post.data.title }}</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% endblock %}

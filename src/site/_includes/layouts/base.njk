@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{locale}}">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="icon" href='/img/apple-touch-icon.png'>
+  <link rel="apple-touch-icon" href='/img/apple-touch-icon.png'>
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet" />
+
+  {% bundledCss %}
+  {% bundledJs %}
+
+  <title>{% if title %}{{ title }}{% else %}{{site.title[locale]}}{% endif %}</title>
+</head>
+
+<body {% onDevelopment %}data-turbolinks="false"{% endonDevelopment %}>
+<a href="#main" data-turbolinks="false">skip to main content</a>
+{% include "components/page-header.njk" %}
+<main id="main" tabindex="-1" class="frame page">
+  {% block content %}{% endblock %}
+</main>
+
+{% include "components/page-footer.njk" %}
+</body>
+</html>

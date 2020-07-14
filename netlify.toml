@@ -1,0 +1,54 @@
+[build]
+  publish = "dist/"
+  command = "npm run build"
+
+[[plugins]]
+  package = "netlify-plugin-minify-html"
+  [plugins.inputs]
+    contexts = [
+      'production',
+      'branch-deploy',
+      'deploy-preview'
+    ]
+  [plugins.inputs.minifierOptions]
+    removeComments = true
+    collapseWhitespace = true
+    conservativeCollapse = true
+    collapseBooleanAttributes = true
+
+[[plugins]]
+package = "@netlify/plugin-sitemap"
+  [plugins.inputs]
+  exclude = [
+      './dist/404.html'
+    ]
+
+# Order: default ones on first; specific ones later
+[[headers]]
+  for = "/*"
+  [headers.values]
+    cache-control = '''
+    max-age=0,
+    no-cache,
+    no-store,
+    must-revalidate'''
+[[headers]]
+  for = "/*.xml"
+  [headers.values]
+    cache-control = "max-age=900, public"
+[[headers]]
+  for = "/*.ico"
+  [headers.values]
+    cache-control = "max-age=86400, public"
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    cache-control = "max-age=86400, public"
+[[headers]]
+  for = "/assets/*.js"
+  [headers.values]
+    cache-control = "max-age=31536000, public"
+[[headers]]
+  for = "/assets/*.css"
+  [headers.values]
+    cache-control = "max-age=31536000, public"

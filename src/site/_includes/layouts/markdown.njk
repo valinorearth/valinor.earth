@@ -1,0 +1,11 @@
+{% extends "layouts/base.njk" %}
+
+
+{% block content %}
+<h1 class="page__title">{{title}}</h1>
+<article class="section">
+  <div class="markdown max-w-xl">
+    {{ content | safe }}
+  </div>
+</article>
+{% endblock %}

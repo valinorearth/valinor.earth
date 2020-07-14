@@ -1,0 +1,15 @@
+.logo-list {
+  @apply flex flex-wrap justify-center;
+  @apply -m-1;
+
+  & li {
+    @apply block p-1;
+    @apply w-32;
+
+    @screen md {
+      @apply w-1/4;
+    }
+  }
+}
+
+/* .logo-list--narrow {} */

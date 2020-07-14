@@ -1,0 +1,38 @@
+.section {
+  @apply border-t-4 pt-4;
+}
+
+.section__title {
+  @apply -mt-2 mb-8 text-xl text-gray-600;
+}
+
+.section--keylined {
+  @apply border-0;
+
+  & .section__title {
+    @apply mb-10;
+    @apply grid gap-2 items-center;
+
+    grid-template-columns: 1fr auto 1fr;
+  }
+  & .section__title::before,
+  & .section__title::after {
+    @apply bg-gray-400;
+
+    content: "";
+    height: 2px;
+    margin-top: 0.333em;
+  }
+
+  & .section__title > * {
+    grid-column: 2;
+  }
+
+  & .section__title::before {
+    grid-column: 1;
+  }
+
+  & .section__title::after {
+    grid-column: -2;
+  }
+}

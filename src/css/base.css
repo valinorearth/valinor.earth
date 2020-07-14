@@ -1,0 +1,47 @@
+*,
+::before,
+::after {
+  @apply border-gray-400;
+}
+
+html {
+  @apply text-gray-900 text-xl leading-normal font-body bg-space-100;
+}
+
+html:lang("ja") {
+  @apply leading-loose;
+}
+
+body {
+  @apply min-h-screen flex flex-col;
+}
+
+a {
+  @apply text-water-700 underline;
+}
+
+a:hover,
+a:focus,
+a:active {
+  @apply text-water-900;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* purgecss ignore */
+[href="#main"] {
+  @apply absolute top-0 z-50;
+
+  right: 100%;
+}
+
+/* purgecss ignore */
+[href="#main"]:focus {
+  @apply right-auto bg-white p-2;
+}
+
+[tabindex="-1"] {
+  outline: none;
+}
