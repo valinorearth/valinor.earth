@@ -1,15 +1,15 @@
 .logo-list {
-  @apply grid gap-2 -mt-4;
-
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  @apply flex flex-wrap justify-center;
+  @apply -m-1;
 
   & li {
-    @apply block;
+    @apply block p-1;
+    @apply w-32;
+
+    @screen md {
+      @apply w-1/4;
+    }
   }
 }
 
-.logo-list--narrow {
-  @screen md {
-    grid-template-columns: repeat(auto-fit, minmax(6rem, 0.5fr));
-  }
-}
+/* .logo-list--narrow {} */
