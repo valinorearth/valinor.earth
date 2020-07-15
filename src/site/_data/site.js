@@ -5,7 +5,7 @@ const primaryNav = [
   "contact",
 ];
 
-const secondaryNav = [...primaryNav, "privacy"];
+const secondaryNav = [...primaryNav, "tools", "privacy"];
 module.exports = {
   buildTime: new Date(),
   baseUrl: "https://valinor.earth",
