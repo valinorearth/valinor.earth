@@ -1,8 +1,12 @@
 {
   "name": "Brajeshwar Oinam",
-  "title": "CEO, India",
+  "title": "Co-Founder, CEO",
   "photoPath": "/img/photo-brajeshwar-oinam.jpg",
   "socialLinks": [
+    {
+      "title": "Personal",
+      "url": "https://brajeshwar.com"
+    },
     {
       "title": "LinkedIn",
       "url": "https://www.linkedin.com/in/brajeshwar/"

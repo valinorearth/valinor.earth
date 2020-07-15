@@ -1,0 +1,20 @@
+{
+  "name": "Saneef Ansari",
+  "title": "Co-Founder, Product Head",
+  "photoPath": "/img/photo-saneef-ansari.jpg",
+  "socialLinks": [
+    {
+      "title": "Personal",
+      "url": "https://saneef.com"
+    },
+    {
+      "title": "LinkedIn",
+      "url": "https://www.linkedin.com/in/saneef/"
+    },
+    {
+      "title": "Twitter",
+      "url": "https://twitter.com/saneef/"
+    }
+  ],
+  "order": 70
+}
