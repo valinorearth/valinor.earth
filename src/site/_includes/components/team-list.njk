@@ -1,7 +1,7 @@
 <ul class="md:flex flex-wrap md:-mx-4 -mt-16">
   {% for person in collections.orderedTeam %}
     {% if person.data.locale === locale %}
-      <li class="md:w-1/2 md:px-4 pb-2 mt-16">
+      <li class="md:w-1/2 md:px-4 pb-2 mt-16" data-order="{{person.data.order}}">
         <div>
           {% if person.data.photoPath %}
           <div class="w-32 overflow-hidden rounded-full mb-3">
