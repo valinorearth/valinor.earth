@@ -1,0 +1,12 @@
+{
+  "name": "Arun RS",
+  "title": "Engineering",
+  "photoPath": "/img/photo-profile-arun-rs.jpg",
+  "socialLinks": [
+    {
+      "title": "Untitled",
+      "url": "https://valinor.earth"
+    }
+  ],
+  "order": 4
+}

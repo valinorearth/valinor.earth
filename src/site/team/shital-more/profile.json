@@ -1,0 +1,16 @@
+{
+  "name": "Shital More",
+  "title": "Design",
+  "photoPath": "/img/photo-profile-shital-more.jpg",
+  "socialLinks": [
+    {
+      "title": "Portfolio",
+      "url": "https://dribbble.com/XCarbon"
+    },
+    {
+      "title": "LinkedIn",
+      "url": "https://www.linkedin.com/in/shitalmore08/"
+    }
+  ],
+  "order": 3
+}
