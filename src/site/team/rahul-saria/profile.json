@@ -1,0 +1,16 @@
+{
+  "name": "Rahul Saria",
+  "title": "Finance",
+  "photoPath": "/img/photo-profile-rahul-saria.jpg",
+  "socialLinks": [
+    {
+      "title": "LinkedIn",
+      "url": "https://www.linkedin.com/in/ca-rahul-saria/"
+    },
+    {
+      "title": "Twitter",
+      "url": "https://twitter.com/rahulsariaca"
+    }
+  ],
+  "order": 6
+}

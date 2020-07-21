@@ -1,0 +1,12 @@
+{
+  "name": "Vishal Hemrajani",
+  "title": "Engineering Head",
+  "photoPath": "/img/photo-profile-vishal-hemrajani.jpg",
+  "socialLinks": [
+    {
+      "title": "Personal",
+      "url": "https://hvishal.com/"
+    }
+  ],
+  "order": 5
+}
