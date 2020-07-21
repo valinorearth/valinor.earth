@@ -3,5 +3,5 @@
 }
 
 .page__title {
-  @apply mt-16 mb-4 font-bold text-3xl;
+  @apply mt-16 mb-4 font-bold text-3xl leading-tight;
 }

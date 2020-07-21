@@ -3,6 +3,7 @@ const path = require("path");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const ErrorOverlay = require("eleventy-plugin-error-overlay");
 const pluginLocalRespimg = require("eleventy-plugin-local-respimg");
+const markdownIt = require("markdown-it");
 
 const collections = require("./eleventy/collections.js");
 const filters = require("./eleventy/filters.js");
@@ -103,6 +104,15 @@ module.exports = function (eleventyConfig) {
   Object.keys(transforms).forEach((transformName) => {
     eleventyConfig.addTransform(transformName, transforms[transformName]);
   });
+
+  const markdownLib = markdownIt({
+    html: true,
+    breaks: false,
+    linkify: true,
+    typographer: true,
+  });
+
+  eleventyConfig.setLibrary("md", markdownLib);
 
   return {
     dir: {
