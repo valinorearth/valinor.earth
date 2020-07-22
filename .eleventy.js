@@ -62,7 +62,7 @@ module.exports = function (eleventyConfig) {
   });
 
   // Copy all images directly to dist.
-  eleventyConfig.addPassthroughCopy({ "src/img/**.{jpg,png,svg}": "img" });
+  eleventyConfig.addPassthroughCopy({ "src/img/**.{jpg,png,svg,webp}": "img" });
   eleventyConfig.addPassthroughCopy({ "src/img/**.ico": "/" });
 
   // Reload the page every time the JS/CSS are changed.
