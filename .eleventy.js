@@ -86,7 +86,7 @@ module.exports = function (eleventyConfig) {
 
   // Copy all images directly to dist.
   eleventyConfig.addPassthroughCopy({ "src/public": "." });
-  eleventyConfig.addPassthroughCopy({ "src/images": "images" });
+  eleventyConfig.addPassthroughCopy({ "src/img": "img" });
 
   // Reload the page every time the JS/CSS are changed.
   eleventyConfig.setBrowserSyncConfig({
