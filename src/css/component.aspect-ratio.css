@@ -4,6 +4,11 @@
   & > * {
     @apply absolute top-0 left-0 h-full w-full;
   }
+
+  & > img,
+  & > picture > img {
+    @apply h-full object-cover;
+  }
 }
 
 .aspect-ratio-1\/2 {
