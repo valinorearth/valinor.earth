@@ -5,7 +5,11 @@
       <span
         class="w-full h-full aspect-ratio aspect-ratio-contain aspect-ratio-4/3"
       >
-        <img width="120" src="{{p.logoPath | url}}" alt="Logo of {{p.name}}" />
+        <img
+          src="{{p.logoPath | url}}"
+          alt="Logo of {{p.name}}"
+          sizes="(max-width: 38.75em) 50vw, 25vw"
+        />
       </span>
     </a>
   </li>

@@ -5,7 +5,11 @@
     {% if product.data.coverImage %}
     <div class="product-card__cover">
       <div class="aspect-ratio aspect-ratio-16/9">
-        <img src="{{product.data.coverImage | url}}" alt="Cover photo for {{product.data.title}}">
+        <img
+          src="{{product.data.coverImage | url}}"
+          alt="Cover photo for {{product.data.title}}"
+          sizes="(max-width: 38.75em) 100vw, 50vw"
+          >
       </div>
     </div>
     {% endif %}

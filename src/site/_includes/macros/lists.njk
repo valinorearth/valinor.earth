@@ -9,7 +9,10 @@
             <div class="aspect-ratio aspect-ratio-1/1">
               <img
                 class="[ block object-cover ]"
-                src="{{ person.data.photoPath | url }}" alt="Photo of {{person.data.name}}">
+                src="{{ person.data.photoPath | url }}"
+                alt="Photo of {{person.data.name}}"
+                sizes="(max-width: 48em) 50vw, 25vw"
+                >
             </div>
           </div>
           {% endif %}
