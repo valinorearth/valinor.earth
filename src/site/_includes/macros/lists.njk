@@ -1,5 +1,6 @@
+{% macro teamList(people, locale = "en") %}
 <ul class="md:flex flex-wrap md:-mx-4 -mt-16">
-  {% for person in collections.orderedTeam %}
+  {% for person in people %}
     {% if person.data.locale === locale %}
       <li class="md:w-1/2 md:px-4 pb-2 mt-16" data-order="{{person.data.order}}">
         <div>
@@ -30,3 +31,4 @@
     {% endif %}
   {% endfor %}
 </ul>
+{% endmacro %}

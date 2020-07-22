@@ -10,9 +10,12 @@ const collectionFilterByFn = (key, value) => {
 };
 
 const sortByOrderFn = function (a, b) {
+  console.log(a.data.order, a.data.title, b.data.order, b.data.title);
+
   if (a.data.order > b.data.order) {
     return -1;
   }
+
   if (a.data.order > b.data.order) {
     return 1;
   }
@@ -21,14 +24,14 @@ const sortByOrderFn = function (a, b) {
 };
 
 module.exports = {
-  products: function (collection) {
+  products(collection) {
     return collection
       .getAll()
       .filter(collectionFilterByFn("tags", "products"))
       .sort(sortByOrderFn);
   },
 
-  jaPosts: function (collection) {
+  jaPosts(collection) {
     return collection
       .getAll()
       .filter(collectionFilterByFn("tags", "posts"))
@@ -36,7 +39,7 @@ module.exports = {
       .sort(collectionSortFn);
   },
 
-  enPosts: function (collection) {
+  enPosts(collection) {
     return collection
       .getAll()
       .filter(collectionFilterByFn("tags", "posts"))
@@ -44,10 +47,17 @@ module.exports = {
       .sort(collectionSortFn);
   },
 
-  orderedTeam: function (collection) {
+  orderedTeam(collection) {
     return collection
       .getAll()
       .filter(collectionFilterByFn("tags", "team"))
+      .sort(sortByOrderFn);
+  },
+
+  orderedCoFounders(collection) {
+    return collection
+      .getAll()
+      .filter(collectionFilterByFn("tags", "co-founder"))
       .sort(sortByOrderFn);
   },
 };

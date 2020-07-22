@@ -3,6 +3,8 @@ title: About
 contentId: about
 ---
 
+{% import "macros/lists.njk" as list %}
+
 <article class="section">
   <h2 class="section__title">Company</h2>
   <div class="markdown max-w-xl">
@@ -21,7 +23,12 @@ contentId: about
 </article>
 
 <article class="section mt-16">
+  <h2 class="section__title">Co-founders</h2>
+  {{ list.teamList(people = collections.orderedCoFounders, locale = locale) }}
+</article>
+
+<article class="section mt-16">
   <h2 class="section__title">Team</h2>
-  {% include "components/team-list.njk" %}
+  {{ list.teamList(people = collections.orderedTeam, locale = locale) }}
 </article>
 
