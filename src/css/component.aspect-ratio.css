@@ -1,5 +1,9 @@
 .aspect-ratio {
   @apply block relative pb-1/1;
+
+  & > * {
+    @apply absolute top-0 left-0 h-full w-full;
+  }
 }
 
 .aspect-ratio-1\/2 {
@@ -8,8 +12,4 @@
 
 .aspect-ratio-4\/3 {
   @apply pb-4/3;
-}
-
-.aspect-ratio__inner {
-  @apply absolute top-0 left-0 h-full w-full;
 }

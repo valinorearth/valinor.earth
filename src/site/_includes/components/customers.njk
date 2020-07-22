@@ -2,14 +2,12 @@
   {% for p in customers %}
     <li>
       <div class="aspect-ratio aspect-ratio-4/3">
-        <div class="aspect-ratio__inner">
-          <a class="tpp-logo w-full h-full"
-             title="{{p.name}}"
-             href="{{p.url}}"
-             target="_blank">
-            <img class="tpp-logo__img" width="120" src="{{p.logoPath | url}}" alt="Logo of {{p.name}}">
-          </a>
-        </div>
+        <a class="tpp-logo w-full h-full"
+           title="{{p.name}}"
+           href="{{p.url}}"
+           target="_blank">
+          <img class="tpp-logo__img" width="120" src="{{p.logoPath | url}}" alt="Logo of {{p.name}}">
+        </a>
       </div>
     </li>
   {% endfor %}
