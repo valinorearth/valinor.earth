@@ -10,13 +10,11 @@ const collectionFilterByFn = (key, value) => {
 };
 
 const sortByOrderFn = function (a, b) {
-  console.log(a.data.order, a.data.title, b.data.order, b.data.title);
-
   if (a.data.order > b.data.order) {
     return -1;
   }
 
-  if (a.data.order > b.data.order) {
+  if (a.data.order < b.data.order) {
     return 1;
   }
 
