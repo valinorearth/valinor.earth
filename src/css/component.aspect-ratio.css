@@ -9,6 +9,11 @@
   & > picture > img {
     @apply h-full object-cover;
   }
+
+  &.aspect-ratio-contain > img,
+  &.aspect-ratio-contain > picture > img {
+    @apply object-contain;
+  }
 }
 
 .aspect-ratio-1\/2 {

@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const ErrorOverlay = require("eleventy-plugin-error-overlay");
+const pluginLocalRespimg = require("eleventy-plugin-local-respimg");
 
 const collections = require("./eleventy/collections.js");
 const filters = require("./eleventy/filters.js");
@@ -19,7 +20,29 @@ const manifest = isDev
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(ErrorOverlay);
+  if (isDev) {
+    eleventyConfig.addPlugin(ErrorOverlay);
+  } else {
+    eleventyConfig.addPlugin(pluginLocalRespimg, {
+      folders: {
+        source: "src",
+        output: "dist",
+      },
+      images: {
+        resize: {
+          min: 250,
+          max: 2100,
+          step: 150,
+        },
+        lazy: true,
+        additional: [],
+        watch: {
+          src: "img/**/*",
+          dest: "img/**/*",
+        },
+      },
+    });
+  }
 
   Object.keys(collections).forEach((key) =>
     eleventyConfig.addCollection(key, collections[key])
@@ -62,8 +85,8 @@ module.exports = function (eleventyConfig) {
   });
 
   // Copy all images directly to dist.
-  eleventyConfig.addPassthroughCopy({ "src/img/**.{jpg,png,svg,webp}": "img" });
-  eleventyConfig.addPassthroughCopy({ "src/img/**.ico": "/" });
+  eleventyConfig.addPassthroughCopy({ "src/public": "." });
+  eleventyConfig.addPassthroughCopy({ "src/images": "images" });
 
   // Reload the page every time the JS/CSS are changed.
   eleventyConfig.setBrowserSyncConfig({
