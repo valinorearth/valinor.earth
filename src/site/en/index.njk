@@ -20,19 +20,66 @@ layout: layouts/home.njk
   </div>
 </div>
 
-<div class="text-gray-700 max-w-md mx-auto mt-2 md:my-24">
-  <p class="text-sm md:text-base">
-    We currently experiment with satellite imagery, hyperspectral imaging, and
-    on-ground soil sampling techniques.
-  </p>
-
-  <p class="mt-4 text-sm md:text-base">
-    The team is aware of the massiveness of the problems and we know we won’t be
-    able to solve most of them. Instead of trying to solve everything, we are
-    opening our data via easy-to-use API (application programming interface) for
-    other institutes, individuals, startups, companies, and interest entities to
-    pick their vertical and solve specific problems using our data.
-  </p>
+<div
+  class="[ aspect-ratio aspect-ratio-16/9 ][ overflow-hidden max-w-4xl mx-auto mt-2 md:my-24 rounded ]"
+>
+  <picture
+    ><source
+      srcset="
+        /img/photo-green-fields.250.webp   250w,
+        /img/photo-green-fields.400.webp   400w,
+        /img/photo-green-fields.550.webp   550w,
+        /img/photo-green-fields.700.webp   700w,
+        /img/photo-green-fields.850.webp   850w,
+        /img/photo-green-fields.1000.webp 1000w,
+        /img/photo-green-fields.1150.webp 1150w,
+        /img/photo-green-fields.1300.webp 1300w,
+        /img/photo-green-fields.1450.webp 1450w,
+        /img/photo-green-fields.1600.webp 1600w,
+        /img/photo-green-fields.1750.webp 1750w,
+        /img/photo-green-fields.1900.webp 1900w,
+        /img/photo-green-fields.2050.webp 2050w,
+        /img/photo-green-fields.2100.webp 2100w
+      "
+      sizes="100vw"
+      type="image/webp" />
+    <source
+      srcset="
+        /img/photo-green-fields.250.jpg   250w,
+        /img/photo-green-fields.400.jpg   400w,
+        /img/photo-green-fields.550.jpg   550w,
+        /img/photo-green-fields.700.jpg   700w,
+        /img/photo-green-fields.850.jpg   850w,
+        /img/photo-green-fields.1000.jpg 1000w,
+        /img/photo-green-fields.1150.jpg 1150w,
+        /img/photo-green-fields.1300.jpg 1300w,
+        /img/photo-green-fields.1450.jpg 1450w,
+        /img/photo-green-fields.1600.jpg 1600w,
+        /img/photo-green-fields.1750.jpg 1750w,
+        /img/photo-green-fields.1900.jpg 1900w,
+        /img/photo-green-fields.2050.jpg 2050w,
+        /img/photo-green-fields.2100.jpg 2100w
+      "
+      sizes="100vw"
+      type="image/jpeg" />
+    <img
+      class="h-full object-cover"
+      src="/img/photo-green-fields.jpg"
+      alt="Aerial view of a field"
+      height="1181.5130260521044"
+      width="2100"
+      loading="lazy"
+  /></picture>
+  <div
+    class="flex justify-center items-center p-4 md:p-6 bg-black bg-opacity-25"
+  >
+    <p
+      class="max-w-md text-center text-white font-bold text-sm md:text-base lg:text-xl text-shadow-dark"
+    >
+      We work with satellite imagery, hyperspectral imaging, and on-ground
+      testing techniques to build tools that augment farming.
+    </p>
+  </div>
 </div>
 
 <div class="section section--keylined max-w-2xl mx-auto mt-8 md:mt-12">
