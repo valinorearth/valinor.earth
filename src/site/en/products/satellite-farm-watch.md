@@ -1,7 +1,7 @@
 ---
 title: Satellite Farm Watch
 contentId: satellite-farm-watch
-coverImage: /img/photo-green-fields-2.jpg
+coverImage: /img/product-cover-satellite-watch.jpg
 order: 10
 ---
 
