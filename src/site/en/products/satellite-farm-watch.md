@@ -5,6 +5,8 @@ coverImage: /img/photo-green-fields-2.jpg
 order: 10
 ---
 
-Using Satellite Imagery, we help farmers with 50+ hectare farmland, to track, analyze, and make intelligent decisions.
+Using Satellite Imagery, we help farmers owning 50+ hectare farmland, to track, analyze, and make intelligent decisions.
 
-Right now, we are working with select farmers and few State government bodies in India.
+Right now, we are experimenting and working with select farmers.
+
+We are also helping few state governments in India, with satellite imagery for farming.
