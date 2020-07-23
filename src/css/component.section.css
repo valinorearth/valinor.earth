@@ -1,5 +1,5 @@
 .section {
-  @apply border-t-4 pt-4;
+  @apply border-t-2 pt-4;
 }
 
 .section__title {
@@ -18,10 +18,10 @@
   & .section__title::before,
   & .section__title::after {
     @apply bg-gray-400;
+    @apply border-t-2;
 
     content: "";
-    height: 2px;
-    margin-top: 0.333em;
+    margin-top: 0.16665em;
   }
 
   & .section__title > * {

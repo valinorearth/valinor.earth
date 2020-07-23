@@ -1,5 +1,19 @@
 .aspect-ratio {
   @apply block relative pb-1/1;
+
+  & > * {
+    @apply absolute top-0 left-0 h-full w-full;
+  }
+
+  & > img,
+  & > picture > img {
+    @apply h-full object-cover;
+  }
+
+  &.aspect-ratio-contain > img,
+  &.aspect-ratio-contain > picture > img {
+    @apply object-contain;
+  }
 }
 
 .aspect-ratio-1\/2 {
@@ -10,6 +24,6 @@
   @apply pb-4/3;
 }
 
-.aspect-ratio__inner {
-  @apply absolute top-0 left-0 h-full w-full;
+.aspect-ratio-16\/9 {
+  @apply pb-16/9;
 }

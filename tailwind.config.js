@@ -5,8 +5,8 @@ module.exports = {
   purge: ["./src/**/*.njk", "./src/**/*.html", "./src/**/*.md"],
   theme: {
     fontFamily: {
-      display: ["Noto Serif JP", "serif"],
-      body: ["Noto Serif JP", "serif"],
+      display: ["Fira Sans", "system-ui"],
+      body: ["Fira Sans", "system-ui"],
     },
     colors: {
       transparent: colors.transparent,
@@ -23,6 +23,7 @@ module.exports = {
         "1/2": "50%",
         "1/3": "33.333333%",
         "2/3": "66.666667%",
+        "16/9": "56.25%",
         "4/3": "75%",
       },
     },

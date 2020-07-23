@@ -1,12 +1,18 @@
-<ul class="products">
+<ul class="products-list">
 {% for product in collections.products %}
   {% if product.data.locale === locale %}
-  <li class="product-card">
+  <li class="product-card{% if product.data.coverImage %} product-card--with-cover{% endif %}">
+    {% if product.data.coverImage %}
     <div class="product-card__cover">
-      <div class="aspect-ratio">
-        <img class="product-card__img aspect-ratio__inner object-cover" src="{{product.data.coverImage | url}}" alt="Cover photo for {{product.data.title}}">
+      <div class="aspect-ratio aspect-ratio-16/9">
+        <img
+          src="{{product.data.coverImage | url}}"
+          alt="Cover photo for {{product.data.title}}"
+          sizes="(max-width: 38.75em) 100vw, 50vw"
+          >
       </div>
     </div>
+    {% endif %}
     <div class="product-card__content">
       <h3 class="product-card__title">{{product.data.title}}</h3>
       <div class="space-y-4">{{product.templateContent | safe}}</div>

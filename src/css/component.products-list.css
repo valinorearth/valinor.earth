@@ -1,0 +1,9 @@
+.products-list {
+  @apply flex flex-wrap -m-2;
+
+  & > * {
+    @apply m-2;
+
+    flex: 1 1 14rem;
+  }
+}

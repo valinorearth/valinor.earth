@@ -7,7 +7,3 @@
     @apply -translate-y-1 shadow-md z-10;
   }
 }
-
-.tpp-logo__img {
-  @apply flex-1 max-h-full object-contain;
-}
