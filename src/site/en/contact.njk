@@ -6,18 +6,20 @@ contentId: contact
 <div class="section">
   <div class="max-w-xl">
     <div class="markdown">
-    	<p>
-    		Email us at <a href="mailto:{{site.email}}">{{site.email}}</a>,
-    		find us on
-    		<a href="https://twitter.com/{{site.twitter}}">Twitter</a>.
-    	</p>
-    	<p>Or, fill out the form for any queries.</p>
+      <p>
+        Email us at <a href="mailto:{{site.email}}">{{site.email}}</a>, find us
+        on
+
+        <a href="{{site.socialNetworks.Twitter}}">Twitter</a>.
+      </p>
+      <p>Or, fill out the form for any queries.</p>
     </div>
     <div class="mt-8">{% include "components/contact-form.njk" %}</div>
   </div>
 </div>
 
-{#<div class="section mt-16">
+{#
+<div class="section mt-16">
   <h2 class="section__title">Offices</h2>
 </div>
 #}

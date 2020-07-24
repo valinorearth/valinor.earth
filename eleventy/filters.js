@@ -6,7 +6,7 @@ module.exports = {
     console.log(obj);
     return obj;
   },
-  // removes directories from path starting with leftmost
+  // Removes directories from path starting with leftmost
   // remove("/src/pages/index.html", 1) -> "/pages/index.html"
   // remove("/src/pages/index.html", 2) -> "/index.html"
   removeDir: (path, level = 1) => {
@@ -24,10 +24,12 @@ module.exports = {
       if (p.data.contentId === contentId) {
         return [...acc, p];
       }
+
       return acc;
     }, []);
 
-    let locales = pages.reduce((acc, page) => [...acc, page.data.locale], []);
+    const locales = pages.reduce((acc, page) => [...acc, page.data.locale], []);
     return [...new Set(locales)].length;
   },
+  objectToArray: (obj) => Object.entries(obj),
 };
