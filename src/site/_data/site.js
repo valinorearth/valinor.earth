@@ -11,9 +11,11 @@ module.exports = {
   baseUrl: "https://valinor.earth",
   name: "Valinor Earth",
   email: "hello@valinor.earth",
-  twitter: "valinorearth",
-  // Linkedin: "",
-  // facebook: "",
+  socialNetworks: {
+    AngelList: "https://angel.co/company/valinor-earth/",
+    LinkedIn: "https://www.linkedin.com/company/valinor-earth/",
+    Twitter: "https://twitter.com/valinorearth",
+  },
   locales: [
     {
       code: "en",
