@@ -1,3 +1,7 @@
+:root {
+  font-size-adjust: 0.527; /* x-height of Fira Sans */
+}
+
 *,
 ::before,
 ::after {
