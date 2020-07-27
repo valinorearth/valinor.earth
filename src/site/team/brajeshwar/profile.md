@@ -1,6 +1,8 @@
 ---
 ---
 
-Brajeshwar Oinam started his entrepreneurial journey with his first company in 2004, which was acquired by a Silicon Valley company in 2006. His next Startup was acquired in 2009. In 2010, he started Levoma, which exited to a Singapore Investment firm, Kamelot Kapital Pte Ltd, in 2013.
+Brajeshwar Oinam started his entrepreneurial journey with his first company in 2004. It was acquired by a Silicon Valley company, [Mixercast](https://www.crunchbase.com/organization/mixercast), in 2006. His next venture, [oCricket](https://ocricket.com), was acquired by [Infinitely Beta](https://www.crunchbase.com/organization/infinitely-beta) (branded later as [Helpshift](https://www.helpshift.com)), in 2009.
 
-He currently focuses on solving farmers’ problems, and is trying to help curb the impact of Agriculture on climate change.
+In 2010, he started [Levoma](https://www.crunchbase.com/organization/levoma), which exited to a Singapore Investment firm, [Kamelot Kapital Pte Ltd](https://www.sgpbusiness.com/company/Kamelot-Kapital-Pte-Ltd), in 2013.
+
+He currently focuses on solving farmers’ problems and is trying to help curb the impact of agriculture on climate change.
