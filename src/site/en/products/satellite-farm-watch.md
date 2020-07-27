@@ -5,8 +5,8 @@ coverImage: /img/product-cover-satellite-watch.jpg
 order: 10
 ---
 
-Using Satellite Imagery, we help farmers owning 50+ hectare farmland, to track, analyze, and make intelligent decisions.
+Using Satellite Imagery, we help farmers with 50+ hectare farmland, to track, analyze, and make intelligent decisions.
 
-Right now, we are experimenting and working with select farmers.
+We are experimenting and working with select farmers.
 
-We are also helping few state governments in India, with satellite imagery for farming.
+We are helping a few Indian state governments with satellite imagery for farming.
