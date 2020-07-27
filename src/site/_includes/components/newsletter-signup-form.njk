@@ -2,11 +2,9 @@
   action="{{site.mailchimp.submissionUrl}}"
   method="post"
   target="_blank"
-  class="p-4 md:px-6 bg-earth-700 rounded text-earth-200"
+  class="text-gray-700"
 >
-  <h2 class="text-lg text-earth-200 font-bold">Stay connected</h2>
-
-  <div class="mt-2 text-sm">
+  <div class="mb-2 text-sm">
     <p>
       To be the first to know when we cross new milestones, and get occassional
       updates in precision farming, sign up below.
@@ -24,7 +22,7 @@
 
   <div class="-m-2 flex flex-wrap md:flex-no-wrap">
     <div class="m-2 w-full">
-      <label for="mce-EMAIL" class="block text-sm mb-1 mt-4"
+      <label for="mce-EMAIL" class="sr-only"
         >Email Address
       </label>
       <input
@@ -33,15 +31,16 @@
         value=""
         name="EMAIL"
         required="required"
-        class="appearance-none border border-earth-200 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        placeholder="Email address"
+        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
       />
     </div>
     <div class="m-2 self-end">
-      <input type="submit" value="Subscribe" name="subscribe" class="button border-earth-200" />
+      <input type="submit" value="Subscribe" name="subscribe" class="button" />
     </div>
   </div>
 
-  <div class="mt-4 text-xs">
+  <div class="mt-4 text-xs text-gray-600">
     <p>We respect your privacy, no spam ever.</p>
   </div>
 </form>
