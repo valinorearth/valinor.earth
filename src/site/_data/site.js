@@ -16,6 +16,10 @@ module.exports = {
     LinkedIn: "https://www.linkedin.com/company/valinor-earth/",
     Twitter: "https://twitter.com/valinorearth",
   },
+  mailchimp: {
+    submissionUrl:
+      "https://earth.us17.list-manage.com/subscribe/post?u=06016756bccc86ac6fbfe64b9&amp;id=3b2451a8f6",
+  },
   locales: [
     {
       code: "en",
