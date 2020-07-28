@@ -13,6 +13,18 @@
 
 .button:active {
   @apply shadow-inner;
+  @apply translate-y-px;
+}
+
+.button--outlined {
+  @apply text-water-700;
+  @apply bg-water-100;
+  @apply border-current;
+
+  &:hover,
+  &:focus {
+    @apply text-water-800 bg-water-200;
+  }
 }
 
 .button[disabled] {
