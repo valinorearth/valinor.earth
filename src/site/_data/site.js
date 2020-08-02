@@ -13,6 +13,8 @@ module.exports = {
   email: "hello@valinor.earth",
   socialNetworks: {
     AngelList: "https://angel.co/company/valinor-earth/",
+    Crunchbase: "https://www.crunchbase.com/organization/valinor-earth",
+    Facebook: "https://www.facebook.com/ValinorEarth",
     LinkedIn: "https://www.linkedin.com/company/valinor-earth/",
     Twitter: "https://twitter.com/valinorearth",
   },
