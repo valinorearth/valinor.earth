@@ -2,5 +2,5 @@
   "tags": ["posts"],
   "layout": "layouts/post.njk",
   "locale": "en",
-  "permalink": "blog/{{ page.date|date('YYYY-MM-DD') }}-{{page.fileSlug}}/index.html"
+  "permalink": "blog/{{page.fileSlug}}/index.html"
 }
