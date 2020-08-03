@@ -11,12 +11,13 @@
 @import "component.button";
 @import "component.frame";
 @import "component.logo-list";
-@import "component.products-list";
 @import "component.markdown";
 @import "component.media-object";
 @import "component.page";
 @import "component.page-footer";
+@import "component.post-blurb";
 @import "component.product-card";
+@import "component.products-list";
 @import "component.section";
 @import "component.tpp-logo";
 
