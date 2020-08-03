@@ -5,30 +5,41 @@ contentId: about
 
 {% import "macros/lists.njk" as list %}
 
-<article class="section">
+<article class="section max-w-xl mx-auto">
   <h2 class="section__title">Company</h2>
-  <div class="markdown max-w-xl">
+  <div class="markdown">
     <blockquote>
       <p>
-        We started as a research initiative funded by <a href="https://sagri.tokyo/">Sagri, Tokyo</a>, Japan. We have since graduated independently as Valinor Earth. We continue to work closely with the Sagri, Japan.
+        We started as a research initiative funded by
+        <a href="https://sagri.tokyo/">Sagri, Tokyo</a>, Japan. We have since
+        graduated independently as Valinor Earth. We continue to work closely
+        with the Sagri, Japan.
       </p>
     </blockquote>
     <p>
-    	Valinor Earth uses technology to help Farmers lead better and happier lives. We aim to help them increase their incomes by educating them and building meaningful tools to augment and optimize their agricultural practices.
+      Valinor Earth uses technology to help Farmers lead better and happier
+      lives. We aim to help them increase their incomes by educating them and
+      building meaningful tools to augment and optimize their agricultural
+      practices.
     </p>
     <p>
-    	We are instrumental in cross-pollinating technical innovations across regions. We have partnered with and are introducing many Japanese technologies, best practices, and methodologies to India.
+      We are instrumental in cross-pollinating technical innovations across
+      regions. We have partnered with and are introducing many Japanese
+      technologies, best practices, and methodologies to India.
     </p>
   </div>
 </article>
 
 <article class="section mt-16">
-  <h2 class="section__title">Founders</h2>
+  <div class="max-w-xl mx-auto">
+    <h2 class="section__title">Founders</h2>
+  </div>
   {{ list.teamList(people = collections.orderedCoFounders, locale = locale) }}
 </article>
 
 <article class="section mt-16">
-  <h2 class="section__title">Team</h2>
+  <div class="max-w-xl mx-auto">
+    <h2 class="section__title">Team</h2>
+  </div>
   {{ list.teamList(people = collections.orderedTeam, locale = locale) }}
 </article>
-

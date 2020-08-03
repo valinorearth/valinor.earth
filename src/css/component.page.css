@@ -2,17 +2,15 @@
   @apply pb-16;
 }
 
+.page__title,
+.page__meta {
+  @apply text-center;
+}
+
 .page__title {
   @apply mt-16 mb-4 font-bold text-3xl leading-tight;
 }
 
 .page__meta {
   @apply -mt-4 mb-6 text-sm text-gray-700;
-}
-
-.page--header-text-center {
-  & .page__title,
-  & .page__meta {
-    @apply text-center;
-  }
 }
