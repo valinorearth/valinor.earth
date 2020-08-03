@@ -7,7 +7,12 @@
       <ul class="space-y-4">
         {% for post in pagination.items | reverse %}
           {% if post.data.locale === locale %}
-          <li><a href="{{ post.url }}">{{ post.data.title }}</a><br><span class="text-sm text-gray-700">{{ page.date | date('ll', locale) }}</span></li>
+          <li>
+              <h2>
+                <a href="{{ post.url }}">{{ post.data.title }}</a>
+              </h2>
+              <p class="text-sm text-gray-700">{{ post.date | date('ll', locale) }}</p>
+          </li>
           {% endif %}
         {% endfor %}
       </ul>
