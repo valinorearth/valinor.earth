@@ -1,6 +1,6 @@
 .markdown {
   & * + * {
-    @apply mt-4;
+    @apply mt-6;
   }
 
   & h1 {
@@ -42,5 +42,10 @@
 
   & pre {
     @apply p-4 bg-gray-200 text-sm;
+  }
+
+  & figure figcaption {
+    @apply mt-2;
+    @apply text-gray-700 text-xs leading-snug;
   }
 }

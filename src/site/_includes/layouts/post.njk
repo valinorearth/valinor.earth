@@ -1,13 +1,12 @@
-{% extends "layouts/base.njk" %}
-
-{% block mainClasses %}page--header-text-center{% endblock %}
-
-{% block content %}
+{% extends "layouts/base.njk" %} {% block mainClasses
+%}page--header-text-center{% endblock %} {% block content %}
 <article class="max-w-xl mx-auto">
   <header>
     <h1 class="page__title">{{title}}</h1>
     <div class="page__meta">
-      <time datetime="{{page.date | date('YYYY-MM-DD') }}">{{ page.date | date('ll', locale) }}</time>
+      <time datetime="{{page.date | date('YYYY-MM-DD') }}"
+        >{{ page.date | date('dddd, d MMMM, yyyy', locale) }}</time
+      >
     </div>
   </header>
 
