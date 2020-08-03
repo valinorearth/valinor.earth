@@ -1,13 +1,16 @@
 {% extends "layouts/base.njk" %}
 
+{% block mainClasses %}page--header-text-center{% endblock %}
+
 {% block content %}
-<article class="md:grid grid-cols-12 col-gap-4">
-  <header class="col-start-5 col-end-13 pb-2 md:pb-4">
-    <h1 class="text-3xl font-bold leading-tight">{{title}}</h1>
+<article class="max-w-xl mx-auto">
+  <header>
+    <h1 class="page__title">{{title}}</h1>
+    <div class="page__meta">
+      <time datetime="{{page.date | date('YYYY-MM-DD') }}">{{ page.date | date('ll', locale) }}</time>
+    </div>
   </header>
-  <aside class="col-start-1 col-end-4 text-gray-700 mb-4">
-    <time datetime="{{page.date | date('YYYY-MM-DD') }}">{{ page.date | date('ll', locale) }}</time>
-  </aside>
-  <div class="col-start-5 col-end-13 markdown">{{ content | safe }}</div>
+
+  <div class="markdown">{{ content | safe }}</div>
 </article>
 {% endblock %}

@@ -24,7 +24,7 @@
 
     {% include "components/page-header.njk" %}
 
-    <main id="main" tabindex="-1" class="frame page">
+    <main id="main" tabindex="-1" class="frame page {% block mainClasses %}{% endblock %}">
       {% block content %}{% endblock %}
     </main>
 
