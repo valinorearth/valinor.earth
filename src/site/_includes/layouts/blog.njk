@@ -3,7 +3,7 @@
 <article class="section">
   <div class="max-w-xl mx-auto">
     <ul class="space-y-4">
-      {% for post in pagination.items | reverse %} {% if post.data.locale ===
+      {% for post in pagination.items %} {% if post.data.locale ===
       locale %}
       <li class="post-blurb">
         <h2>
