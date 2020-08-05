@@ -22,4 +22,6 @@ We continued with the Chintamani district in Karnataka by partnering with a loca
 
 We continued our effort during the Pandemic by partnering with [Rangde](https://rangde.in/) to finally disburse a total of 200 cash helps to farmers without asking for any interest on the principle.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/U1CePtasyFw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="aspect-ratio aspect-ratio-16/9">
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/U1CePtasyFw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
