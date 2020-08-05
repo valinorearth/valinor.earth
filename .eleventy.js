@@ -35,7 +35,7 @@ module.exports = function (eleventyConfig) {
           max: 2100,
           step: 150,
         },
-        lazy: true,
+        lazy: false,
         additional: [],
         watch: {
           src: "img/**/*",
