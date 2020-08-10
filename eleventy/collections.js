@@ -58,4 +58,11 @@ module.exports = {
       .filter(collectionFilterByFn("tags", "co-founder"))
       .sort(sortByOrderFn);
   },
+
+  orderedAdvisors(collection) {
+    return collection
+      .getAll()
+      .filter(collectionFilterByFn("tags", "advisor"))
+      .sort(sortByOrderFn);
+  },
 };

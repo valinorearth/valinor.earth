@@ -5,14 +5,14 @@
     "url": "https://freshiesfresh.com/"
   },
   {
-    "name": "Freshokartz",
-    "logoPath": "/img/logo-partner-freshokartz.png",
-    "url": "https://www.freshokartz.com/"
-  },
-  {
     "name": "Gromor",
     "logoPath": "/img/logo-partner-gromor.png",
     "url": "https://gromor.in/"
+  },
+  {
+    "name": "MyStartupYatra",
+    "logoPath": "/img/logo-partner-mystartupyatra.png",
+    "url": "http://mystartupyatra.com/"
   },
   {
     "name": "Rang De",
