@@ -37,4 +37,14 @@
   </li>
   {% endif %} {% endfor %}
 </ul>
+
+{% endmacro %} {% macro socialNetworksList(networks, ulClass, liClass, aClass,
+locale = "en") %}
+<ul class="{{ulClass}}">
+  {% for item in networks %}
+  <li class="{{liClass}}">
+    <a class="{{aClass}}" href="{{item[1]}}" rel="noopener">{{item[0]}}</a>
+  </li>
+  {% endfor %}
+</ul>
 {% endmacro %}
