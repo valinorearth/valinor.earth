@@ -3,14 +3,14 @@ title: Contact
 contentId: contact
 ---
 
+{% import "macros/lists.njk" as lists %}
 <div class="section">
   <div class="max-w-lg mx-auto">
     <div class="markdown">
       <p>
         Email us at <a href="mailto:{{site.email}}">{{site.email}}</a>. Find us
-        on <a href="{{site.socialNetworks.AngelList}}">AngelList</a>,
-        <a href="{{site.socialNetworks.LinkedIn}}">LinkedIn</a>, and
-        <a href="{{site.socialNetworks.Twitter}}">Twitter</a>.
+        on: {{lists.socialNetworksListCommaSeparated(networks =
+        site.socialNetworks | objectToArray, conjunction = "or")}}.
       </p>
       <p>Or, fill out the form for any queries.</p>
     </div>
