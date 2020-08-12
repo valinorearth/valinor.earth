@@ -1,0 +1,13 @@
+{
+  "name": "Gurjot Singh",
+  "title": "Scientific Advisor",
+  "photoPath": "/img/photo-profile-gurjot-singh.jpg",
+  "tags": ["advisor"],
+  "socialLinks": [
+    {
+      "title": "LinkedIn",
+      "url": "https://www.linkedin.com/in/gurjot-singh-81637664/"
+    }
+  ],
+  "order": 3
+}
