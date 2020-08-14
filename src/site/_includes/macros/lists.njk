@@ -47,8 +47,27 @@ locale = "en") %}
   </li>
   {% endfor %}
 </ul>
-{% endmacro %} {% macro socialNetworksListCommaSeparated(networks, aClass,
-conjunction = "and", locale = "en") %}{% for item in networks %}{% if loop.last
+{% endmacro %}
+
+{% macro socialNetworksListCommaSeparated(networks, aClass,
+conjunction = "and", locale = "en") %}
+{% for item in networks %}{% if loop.last
 and loop.length > 1 %} {{conjunction}} {% endif %}
 <a class="{{aClass}}" href="{{item[1]}}" rel="noopener">{{item[0]}}</a>{% if
-(not loop.last) and (loop.length > 2) %},{% endif %}{% endfor %}{% endmacro %}
+(not loop.last) and (loop.length > 2) %},{% endif %}{% endfor %}
+{% endmacro %}
+
+{% macro blogPosts(collection, showDate = true, ulClasses, liClasses, hClasses, aClasses, dtClasses, locale = "en") %}
+<ul class="{{ulClasses}}">
+  {% for post in collection %}
+    {% if post.data.locale === locale %}
+    <li class="{{liClasses}}">
+      <h2 class="{{hClasses}}"><a class="{{aClasses}}" href="{{ post.url }}">{{ post.data.title }}</a></h2>
+      {% if showDate %}
+        <p class="{{dtClasses}}">{{ post.date | date('ll', locale) }}</p>
+      {% endif %}
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+{% endmacro %}

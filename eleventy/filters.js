@@ -32,4 +32,5 @@ module.exports = {
     return [...new Set(locales)].length;
   },
   objectToArray: (obj) => Object.entries(obj),
+  firstN: (arr, n) => arr.slice(0, n),
 };
