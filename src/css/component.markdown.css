@@ -1,6 +1,6 @@
 .markdown {
   & * + * {
-    @apply mt-6;
+    @apply mt-5;
   }
 
   & h1 {
