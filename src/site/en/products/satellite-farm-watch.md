@@ -5,8 +5,8 @@ coverImage: /img/product-cover-satellite-watch.jpg
 order: 10
 ---
 
-Using Satellite Imagery, we help farmers to track, monitor, and analyze to make smart and precision farming decisions.
+We use Satellite imagery to track, monitor, and analyze to help farmers make smart and precision farming decisions.
 
-We help farmers with localized weather predictability, biomass mapping, monitor crop health, water management, and fertilizer application optimization.
+We send reports to farmers with localized weather predictability, biomass mapping, monitor crop health and stress, water presence, and fertilizer application optimization.
 
-Right now, we work closely with a few select large farmers. We have also begun work on helping a few Indian state governments with satellite imagery to improve farming.
+Right now, we work closely with a few select large farmers. We have also begun helping a few Indian state governments with tracking and reporting crop-insurance frauds.
