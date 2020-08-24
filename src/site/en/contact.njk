@@ -8,9 +8,10 @@ contentId: contact
   <div class="max-w-lg mx-auto">
     <div class="markdown">
       <p>
-        Email us at <a href="mailto:{{site.email}}">{{site.email}}</a>. Find us
-        on: {{lists.socialNetworksListCommaSeparated(networks =
-        site.socialNetworks | objectToArray, conjunction = "or")}}.
+        Email us at <a href="mailto:{{site.email}}">{{site.email}}</a>.
+        <br>
+        Find us on
+        {{lists.socialNetworksListCommaSeparated(networks = site.socialNetworks | objectToArray, conjunction = "and")}}.
       </p>
       <p>Or, fill out the form for any queries.</p>
     </div>
