@@ -42,7 +42,7 @@
     "postcss-loader": "^3.0.0",
     "postcss-nesting": "^7.0.1",
     "stimulus": "^1.1.1",
-    "stylelint": "^13.6.1",
+    "stylelint": "^13.7.0",
     "stylelint-config-hudochenkov": "^5.0.0",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",
@@ -67,8 +67,8 @@
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.5.0",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.11",
-    "prettier": "^2.0.5"
+    "husky": "^4.3.0",
+    "lint-staged": "^10.3.0",
+    "prettier": "^2.1.1"
   }
 }
