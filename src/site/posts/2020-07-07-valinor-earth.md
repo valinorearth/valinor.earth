@@ -1,11 +1,9 @@
 ---
-title: Sagri to Valinor Earth
-contentId: sagri-valinor-earth
+title: Valinor Earth
+contentId: valinor-earth
 ---
 
-It all started as a research project in early 2020. A team of Japanese AgTech enthusiasts helped form an Indian group to research the Indian Agriculture landscape's biggest problems.
-
-Brajeshwar Oinam led the team and picked one of the biggest problems faced by farmers -- their inability to access favorable credits at the right time.
+It all started when the research initiative led by Brajeshwar Oinam picked one of the biggest problems faced by farmers -- their inability to access favorable credits at the right time.
 
 At the early start, we presented our ideas and approach at the Agri-Tech Seminar, New Delhi (Jan 20, 2020). Around that time, we also explored on means and ways to work closely with the farmers in Uttar Pradesh.
 
