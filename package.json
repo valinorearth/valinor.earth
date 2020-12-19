@@ -11,11 +11,11 @@
   "scripts": {
     "build": "NODE_ENV=production run-s --print-name clean build:assets build:site",
     "build:assets": "webpack --mode production",
-    "build:site": "eleventy",
+    "build:site": "eleventy --quiet",
     "clean": "rm -rf ./dist",
     "predev": "run-s --print-name clean",
     "dev:assets": "webpack --mode development --watch",
-    "dev:site": "eleventy --serve",
+    "dev:site": "eleventy --quiet --serve",
     "start": "NODE_ENV=development run-p --print-name dev:*",
     "test": "run-s --print-name build"
   },
