@@ -8,7 +8,7 @@
 
 .button:hover,
 .button:focus {
-  @apply text-white bg-water-700 outline-none shadow-outline;
+  @apply text-white bg-water-700 outline-none ring;
 }
 
 .button:active {
