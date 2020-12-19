@@ -9,23 +9,23 @@ layout: layouts/home.njk
   <div class="text-gray-700 flex flex-col justify-center">
     <h1 class="sr-only">{{site.title[locale]}}</h1>
     <p class="font-bold text-lg text-gray-900 md:text-2xl">
-      Striving to fulfill the lives of farmers.
+      We build precision farming tools and solutions, to help farmers increase yields while saving on costs.
     </p>
     <p class="mt-4 text-sm md:text-base">
-      We are a data platform helping the Agriculture value chain, focusing on
-      reaching the marginal & under-served farmers.
+      Computational Agriculture powered by Artificial Intelligence and Satellite Imagery.
     </p>
-    <p class="mt-4 text-sm md:text-base">
-      We crunch through publicly available data, government-collected data, and
-      our own to help bring meaningful solutions to the myriad challenges faced
-      by farmers.
-    </p>
+    <div class="mt-2 text-sm flex gap-x-2">
+      <a class="button" href="#">Start 90 days free trial</a>
+      <a class="button button--outlined" href="#">Schedule a demo</a>
+    </div>
   </div>
 </div>
 
-<div class="section max-w-md mx-auto mt-8 md:mt-12">
+{#
+  <div class="section max-w-md mx-auto mt-8 md:mt-12">
   {% include "components/newsletter-signup-form.njk" %}
-</div>
+  </div>
+#}
 
 <div
   class="[ aspect-ratio aspect-ratio-16/9 ][ overflow-hidden max-w-4xl mx-auto mt-12 md:my-24 rounded ]"
