@@ -1,0 +1,21 @@
+.stat {
+  @apply flex flex-col items-center;
+}
+
+.stat__title {
+  @apply text-fire-600 font-bold;
+}
+
+.stat__value,
+.stat__unit {
+  @apply block text-center;
+}
+
+.stat__value {
+  @apply text-fire-600 font-bold text-4xl;
+}
+
+.stat__unit {
+  @apply -m-1;
+  @apply text-fire-600 uppercase text-xs tracking-wide;
+}
