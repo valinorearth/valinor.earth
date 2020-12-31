@@ -1,0 +1,44 @@
+.stats {
+  @apply p-4;
+  @apply bg-white;
+  @apply border border-gray-300 rounded;
+
+  @apply flex flex-wrap -m-2;
+
+  & > * {
+    @apply m-2;
+
+    flex: 1 1 14rem;
+  }
+}
+
+.stat {
+  @apply flex flex-col items-center;
+  @apply text-gray-700;
+}
+
+.stat__title,
+.stat__value,
+.stat__unit {
+  @apply text-center;
+}
+
+.stat__title {
+  @screen md {
+    @apply font-bold;
+  }
+}
+
+.stat__value,
+.stat__unit {
+  @apply block;
+}
+
+.stat__value {
+  @apply font-bold text-4xl text-earth-800;
+}
+
+.stat__unit {
+  @apply uppercase text-xs tracking-wider;
+  @apply text-gray-600;
+}
