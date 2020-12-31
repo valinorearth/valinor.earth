@@ -9,7 +9,7 @@ layout: layouts/home.njk
 <div class="mx-auto md:mt-16 md:mb-24">
   <div class="text-gray-500 flex flex-col justify-center">
     <h1 class="sr-only">{{site.title[locale]}}</h1>
-    <p class="[ text-lg md:text-4xl lg:text-6xl leading-snug md:leading-none font-bold ][ text-transparent bg-clip-text bg-gradient-to-tl from-water-800 to-water-600 ]">
+    <p class="[ text-lg md:text-4xl lg:text-6xl leading-snug md:leading-none font-bold ][ text-transparent bg-clip-text bg-gradient-to-tl from-earth-800 to-earth-600 ]">
       Precision farming solutions to help farmers maximize yield and minimize cost.
     </p>
     <p class="mt-1 md:mt-4 text-sm md:text-base lg:text-xl">
@@ -35,26 +35,15 @@ layout: layouts/home.njk
 #}
 
 <div class="section max-w-md mx-auto mt-8 md:mt-12">
-  <h2 class="section__title text-center">Mobile and Web Apps</h2>
+  <h2 class="section__title text-center">Coming soon</h2>
   {% include "components/apps.njk" %}
 </div>
 
-<div
-  class="[ aspect-ratio aspect-ratio-16/9 ][ overflow-hidden max-w-4xl mx-auto mt-12 md:my-24 rounded ]"
->
-  <img src="/img/photo-green-fields.jpg" alt="Aerial view of a field" />
-  <div
-    class="flex justify-center items-center p-4 md:p-6 bg-black bg-opacity-25"
-  >
-    <p
-      class="max-w-md text-center text-white font-bold text-sm md:text-base lg:text-xl text-shadow-dark"
-    >
-      We build satellite imagery tools and solutions for smart and precision farming.
-    </p>
-  </div>
+<div class="section mx-auto mt-8 md:mt-12">
+  {% include "components/services.njk" %}
 </div>
 
-<div class="section max-w-2xl mx-auto mt-8 md:mt-12">
+<div class="section mx-auto mt-8 md:mt-12">
   {% include "components/products.njk" %}
 </div>
 
