@@ -2,13 +2,23 @@
   @apply flex flex-col items-center;
 }
 
+.stat__title,
+.stat__value,
+.stat__unit {
+  @apply text-center;
+}
+
 .stat__title {
-  @apply text-fire-600 font-bold;
+  @apply text-fire-600;
+
+  @screen md {
+    @apply font-bold;
+  }
 }
 
 .stat__value,
 .stat__unit {
-  @apply block text-center;
+  @apply block;
 }
 
 .stat__value {
@@ -16,6 +26,6 @@
 }
 
 .stat__unit {
-  @apply -m-1;
+  /* @apply -m-1; */
   @apply text-fire-600 uppercase text-xs tracking-wide;
 }
