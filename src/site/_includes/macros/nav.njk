@@ -20,3 +20,5 @@
   {% endfor%}
 </ul>
 {% endmacro %}
+
+{% macro contactUrl(subject) %}/contact?subject={{subject | urlencode}}{% endmacro %}

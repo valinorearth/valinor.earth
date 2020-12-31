@@ -1,7 +1,21 @@
 import { Controller } from "stimulus";
+import { getSearchValue } from "../utils/url";
 
 export default class extends Controller {
-  static targets = ["form", "successMessage", "failureMessage", "submit"];
+  static targets = [
+    "form",
+    "subject",
+    "successMessage",
+    "failureMessage",
+    "submit",
+  ];
+
+  connect() {
+    const subject = getSearchValue("subject");
+    if (subject) {
+      this.subjectTarget.value = subject;
+    }
+  }
 
   send(e) {
     e.preventDefault();

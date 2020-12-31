@@ -5,6 +5,7 @@ permalink: index.html
 layout: layouts/home.njk
 ---
 
+{% import "macros/nav.njk" as navMacros %}
 <div class="mx-auto md:mt-16 md:mb-24">
   <div class="text-gray-700 flex flex-col justify-center">
     <h1 class="sr-only">{{site.title[locale]}}</h1>
@@ -15,8 +16,14 @@ layout: layouts/home.njk
       Computational Agriculture using Artificial Intelligence and Satellite Imagery.
     </p>
     <div class="mt-4 text-sm flex flex-wrap gap-2">
-      <a class="button" href="#">Start 90-day free trial</a>
-      <a class="button button--outlined" href="#">Schedule a demo</a>
+      <a
+        class="button"
+        href="{{navMacros.contactUrl("Interested in a free trial")}}"
+        >Start 90-day free trial</a>
+      <a
+        class="button button--outlined"
+        href="{{navMacros.contactUrl("I'd like a demo")}}"
+        >Schedule a demo</a>
     </div>
   </div>
 </div>
