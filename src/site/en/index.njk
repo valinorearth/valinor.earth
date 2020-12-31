@@ -7,15 +7,15 @@ layout: layouts/home.njk
 
 {% import "macros/nav.njk" as navMacros %}
 <div class="mx-auto md:mt-16 md:mb-24">
-  <div class="text-gray-700 flex flex-col justify-center">
+  <div class="text-gray-500 flex flex-col justify-center">
     <h1 class="sr-only">{{site.title[locale]}}</h1>
-    <p class="text-black text-lg md:text-5xl leading-snug md:leading-tight">
-      We build precision farming solutions to help farmers maximize yield and minimize cost.
+    <p class="[ text-lg md:text-4xl lg:text-6xl leading-snug md:leading-none font-bold ][ text-transparent bg-clip-text bg-gradient-to-tl from-water-800 to-water-600 ]">
+      Precision farming solutions to help farmers maximize yield and minimize cost.
     </p>
-    <p class="mt-1 text-sm md:text-base">
+    <p class="mt-1 md:mt-4 text-sm md:text-base lg:text-xl">
       Computational Agriculture using Artificial Intelligence and Satellite Imagery.
     </p>
-    <div class="mt-4 text-sm flex flex-wrap gap-2">
+    <div class="mt-4 md:mt-8 text-sm flex flex-wrap gap-2">
       <a
         class="button"
         href="{{navMacros.contactUrl("Interested in a free trial")}}"
