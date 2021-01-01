@@ -2,11 +2,13 @@
   @apply p-4;
   @apply bg-white;
   @apply border border-gray-300 rounded;
+}
 
-  @apply flex flex-wrap -m-2;
+.stats__container {
+  @apply flex flex-wrap -m-4;
 
   & > * {
-    @apply m-2;
+    @apply m-4;
 
     flex: 1 1 14rem;
   }
