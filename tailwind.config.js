@@ -8,6 +8,14 @@ module.exports = {
       display: ["Fira Sans", "system-ui"],
       body: ["Fira Sans", "system-ui"],
     },
+    letterSpacing: {
+      tighter: "-.025em",
+      tight: "-.0125em",
+      normal: "0",
+      wide: ".0125em",
+      wider: ".025em",
+      widest: ".5em",
+    },
     colors: {
       transparent: colors.transparent,
       current: colors.current,
