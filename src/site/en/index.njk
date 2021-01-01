@@ -15,15 +15,19 @@ layout: layouts/home.njk
     <p class="mt-1 md:mt-4 text-sm md:text-base lg:text-xl">
       Computational Agriculture using Artificial Intelligence and Satellite Imagery.
     </p>
-    <div class="mt-4 md:mt-8 text-sm flex flex-wrap gap-2">
-      <a
-        class="button"
-        href="{{navMacros.contactUrl("Interested in a free trial")}}"
-        >Start 90-day free trial</a>
-      <a
-        class="button button--outlined"
-        href="{{navMacros.contactUrl("I'd like a demo")}}"
-        >Schedule a demo</a>
+    <div class="mt-4 md:mt-8 text-sm flex flex-wrap -m-2">
+      <div class="p-2">
+        <a
+          class="button"
+          href="{{navMacros.contactUrl("Interested in a free trial")}}"
+          >Start 90-day free trial</a>
+      </div>
+      <div class="p-2">
+        <a
+          class="button button--outlined"
+          href="{{navMacros.contactUrl("I'd like a demo")}}"
+          >Schedule a demo</a>
+      </div>
     </div>
   </div>
 </div>
@@ -55,7 +59,7 @@ layout: layouts/home.njk
   {% include "components/apps.njk" %}
 </div>
 
-<div class="section max-w-2xl mx-auto mt-8 md:mt-12">
+<div class="section max-w-md mx-auto mt-8 md:mt-12">
   <h2 class="section__title text-center">Partners</h2>
   {% include "components/partners.njk" %}
 </div>
