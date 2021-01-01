@@ -30,3 +30,17 @@
 .section__title::after {
   grid-column: -2;
 }
+
+.section--border-top,
+.section--border-bottom {
+  @apply border-gray-300;
+}
+
+.section--border-top {
+  @apply border-t;
+  @apply pt-8;
+
+  @screen lg {
+    @apply pt-12;
+  }
+}
