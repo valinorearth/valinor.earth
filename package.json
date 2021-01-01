@@ -49,8 +49,8 @@
     "stylelint-prettier": "^1.1.2",
     "tailwindcss": "^2.0.2",
     "turbolinks": "^5.2.0",
-    "webpack": "^5.11.0",
-    "webpack-cli": "^4.2.0",
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1",
     "webpack-manifest-plugin": "^3.0.0"
   },
   "husky": {
@@ -69,7 +69,7 @@
     "eslint": "^7.16.0",
     "husky": "^4.3.6",
     "lint-staged": "^10.5.3",
-    "postcss": "^8.2.1",
+    "postcss": "^8.2.2",
     "prettier": "^2.2.1",
     "stimulus-animated-number": "^2.0.0"
   }
