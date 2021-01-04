@@ -2,16 +2,16 @@
   {
     "name": "Freshies Fresh",
     "logoPath": "/img/logo-partner-freshies-fresh.png",
-    "url": "https://freshiesfresh.com/"
+    "url": "https://freshiesfresh.com"
   },
   {
-    "name": "Gromor",
-    "logoPath": "/img/logo-partner-gromor.png",
-    "url": "https://gromor.in/"
+    "name": "Hosachi Guru",
+    "logoPath": "/img/logo-customer-hosachiguru.png",
+    "url": "https://www.hosachiguru.com"
   },
   {
     "name": "MyStartupYatra",
     "logoPath": "/img/logo-partner-mystartupyatra.png",
-    "url": "https://www.beondeck.com/"
+    "url": "http://mystartupyatra.com"
   }
 ]

@@ -1,8 +1,8 @@
 ---
-title: Private Farmers and Investors
-contentId: private-farmers-and-investors
-coverImage: /img/product-cover-satellite-watch.jpg
+title: Contract Farmers and Investors
+contentId: customer-private-farmers-investors
+coverImage: /img/product-cover-contract-investor.jpg
 order: 10
 ---
 
-We use Satellite imagery to track, monitor, and analyze to help farmers make smart and precision farming decisions.
+We work closely with private contract farmers, companies, and farm investors. We help them track farm productivity, validate activities to invest, and gain a high return on their investments.

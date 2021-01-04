@@ -1,9 +1,7 @@
 ---
-title: Focus Crops
+title: Focus Crops and Specialization
 contentId: focus-crops
-coverImage: /img/photo-green-fields-2.jpg
+coverImage: /img/product-cover-tea-farm.jpg
 ---
 
-Tea, Coffee, Sugarcane
-
-We are aware of the massiveness of the problems faced by farmers. We know we won’t be able to solve most of them.
+We have access to a massive amount of farm data. We work with focus-crop growers to give them specific data related to their crops. We work with **Tea, Coffee, Sugarcane**. We continue experimenting with others.
