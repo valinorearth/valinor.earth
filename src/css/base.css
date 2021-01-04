@@ -52,7 +52,7 @@ img {
 
 mark {
   @apply px-0.5;
-  @apply bg-earth-200 text-earth-700;
+  @apply bg-fire-200 text-earth-700;
 
   /* .text-shadow-light */
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
