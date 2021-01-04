@@ -6,16 +6,15 @@ layout: layouts/home.njk
 ---
 
 {% import "macros/nav.njk" as navMacros %}
-<div class="mx-auto md:mt-16 md:mb-24">
+<div class="max-w-2xl md:mt-16 md:mb-24">
   <div class="text-gray-500 flex flex-col justify-center">
     <h1 class="sr-only">{{site.title[locale]}}</h1>
-    <p class="[ text-lg md:text-4xl lg:text-6xl leading-snug md:leading-none lg:tracking-tight font-bold ][ text-transparent bg-clip-text bg-gradient-to-tl from-earth-800 to-earth-600 ]">
-      Farming with Satellite Data
+    <p class="[ -mt-1 py-1 ][ text-lg md:text-4xl lg:text-6xl leading-snug md:leading-none lg:tracking-tight font-bold ][ text-transparent bg-clip-text bg-gradient-to-tl from-earth-800 to-earth-600 ]">
+      Farming with Satellites
     </p>
-    <p class="mt-1 md:mt-4 text-sm md:text-base lg:text-xl">
-      We do computational agriculture using machine learning and satellite data to remotely <mark>monitor farms, track crop growth (NDVI) and water stress (NDMI).</mark>
+    <p class="md:mt-3 text-sm md:text-base lg:text-xl">We use machine learning with satellite data to <mark>monitor farms, track crop growth and water stress.</mark> All done remotely.
     </p>
-    <div class="mt-4 md:mt-8 text-sm flex flex-wrap -m-2">
+    <div class="mt-4 md:mt-8 text-sm flex flex-wrap items-center -m-2">
       <div class="p-2">
         <a
           class="button"
@@ -24,7 +23,6 @@ layout: layouts/home.njk
       </div>
       <div class="p-2">
         <a
-          class="button button--outlined"
           href="{{navMacros.contactUrl("Demo Request")}}"
           >Request Demo</a>
       </div>
