@@ -1,9 +1,16 @@
 .products-list {
-  @apply flex flex-wrap -m-2;
+  @apply flex flex-wrap justify-center;
+  @apply -m-2;
 
   & > * {
-    @apply m-2;
+    @apply p-2;
 
-    flex: 1 1 14rem;
+    @screen md {
+      @apply w-1/2;
+    }
+
+    @screen lg {
+      @apply w-1/3;
+    }
   }
 }

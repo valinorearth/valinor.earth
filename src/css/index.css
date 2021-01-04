@@ -19,6 +19,8 @@
 @import "component.product-card";
 @import "component.products-list";
 @import "component.section";
+@import "component.stats";
+@import "component.svg-icon";
 @import "component.tpp-logo";
 
 /* Utils */

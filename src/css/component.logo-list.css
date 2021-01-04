@@ -4,11 +4,7 @@
 
   & li {
     @apply block p-1;
-    @apply w-32;
-
-    @screen md {
-      @apply w-1/4;
-    }
+    @apply w-36;
   }
 }
 

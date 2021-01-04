@@ -79,3 +79,11 @@ Set `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` environment variables. Then,
 ### CI
 
 The Github CI is configured to deploy when pushed to `master` branch. See [configuration file](.github/workflows/deploy.yml)
+
+## Attributions
+
+### Icons
+
+- chip by Petai Jantrapoon from the Noun Project
+- cloud data by Petai Jantrapoon from the Noun Project
+- metal heart by Petai Jantrapoon from the Noun Project

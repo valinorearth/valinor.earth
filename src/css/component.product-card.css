@@ -1,8 +1,13 @@
-.product-card {
+.product-card,
+.product-card__container {
+  @apply min-h-full;
+}
+
+.product-card__container {
   @apply overflow-hidden;
   @apply relative;
   @apply grid;
-  @apply text-gray-700 text-sm;
+  @apply text-gray-500;
   @apply bg-white rounded;
   @apply transition duration-150 ease-in-out transform;
 
@@ -13,10 +18,13 @@
   @apply p-4;
   @apply flex flex-col items-start;
   @apply border border-gray-300 rounded;
+  @apply text-sm;
 }
 
 .product-card__title {
-  @apply text-gray-900 font-bold text-xl pb-2;
+  @apply mb-1;
+  @apply text-base;
+  @apply font-bold text-gray-900;
 }
 
 .product-card__cta {

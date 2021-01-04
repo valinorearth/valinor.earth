@@ -4,11 +4,12 @@
   @apply border border-water-600 rounded;
   @apply transition duration-100 ease-in-out transform;
   @apply leading-tight;
+  @apply shadow;
 }
 
 .button:hover,
 .button:focus {
-  @apply text-white bg-water-700 outline-none shadow-outline;
+  @apply text-white bg-water-700 outline-none ring;
 }
 
 .button:active {
@@ -17,7 +18,7 @@
 }
 
 .button--outlined {
-  @apply text-water-700;
+  @apply text-water-600;
   @apply bg-water-100;
   @apply border-current;
 
