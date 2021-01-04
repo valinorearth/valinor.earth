@@ -37,7 +37,7 @@
 }
 
 .section--border-top {
-  @apply border-t;
+  @apply border-t-2;
   @apply pt-8;
 
   @screen lg {
