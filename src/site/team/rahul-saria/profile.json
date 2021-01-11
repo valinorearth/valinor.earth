@@ -2,6 +2,7 @@
   "name": "Rahul Saria",
   "title": "Finance",
   "photoPath": "/img/photo-profile-rahul-saria.jpg",
+  "tags": ["advisor"],
   "socialLinks": [
     {
       "title": "LinkedIn",
@@ -12,5 +13,5 @@
       "url": "https://twitter.com/rahulsariaca"
     }
   ],
-  "order": 6
+  "order": 1
 }
