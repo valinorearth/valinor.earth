@@ -12,6 +12,16 @@
   {
     "name": "MyStartupYatra",
     "logoPath": "/img/logo-partner-mystartupyatra.png",
-    "url": "http://mystartupyatra.com"
+    "url": "https://mystartupyatra.com"
+  },
+  {
+    "name": "On Deck Founders",
+    "logoPath": "/img/logo-partner-ondeck.svg",
+    "url": "https://beondeck.com/r/BrajeshwarOinam"
+  },
+  {
+    "name": "10.Pink",
+    "logoPath": "/img/logo-partner-10pink.svg",
+    "url": "https://ten.pink"
   }
 ]
