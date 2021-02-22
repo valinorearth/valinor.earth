@@ -20,6 +20,13 @@ Indian citizen, government entities, societies registered under applicable statu
 - Representation — maps or its representation in 2D, 3D, or more dimensional representation, including [Augmented Reality](https://en.wikipedia.org/wiki/Augmented_reality) (AR) and [Virtual Reality](https://en.wikipedia.org/wiki/Virtual_reality) (VR).
 - Technology — there is no limit on the types of technology deployed to collect geospatial data. Current technologies such as Drones, UAVs, LIDAR, Radar, including [Synthetic-Aperture Radar](https://en.wikipedia.org/wiki/Synthetic-aperture_radar) (SAR) devices either stationary, vehicle or satellite mounted, Satellites, or computer-generated or inferred by [Artificial Intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence) (AI).
 
+<figure>
+    <img src="/img/blog/2021-02-15-india-satellite-map.jpg" alt="Satellite Image of India">
+    <figcaption>
+        Satellite Image of India.
+    </figcaption>
+</figure>
+
 ## The Guidelines
 
 Unlike before, there is no requirement for prior approval, security clearance, license, or any other restrictions on the collection, generation, preparation, dissemination, storage, publication, updating, and digitization of Geospatial Data and Maps. Individuals, companies, organizations, and government agencies, shall be free to process the acquired Geospatial Data, build applications, and develop solutions.
