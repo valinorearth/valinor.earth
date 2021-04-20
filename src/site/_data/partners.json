@@ -28,5 +28,10 @@
     "name": "10.Pink",
     "logoPath": "/img/logo-partner-10pink.svg",
     "url": "https://ten.pink"
+  },
+  {
+    "name": "IntelliCulture",
+    "logoPath": "/img/logo-partner-intelliculture.png",
+    "url": "https://www.intelliculture.ca"
   }
 ]
