@@ -2,12 +2,12 @@
   "name": "Priyadarshi Sadangi",
   "title": "Co-Founder, Business",
   "photoPath": "/img/photo-profile-priyadarshi.jpg",
-  "tags": ["co-founder"],
+  "tags": ["team"],
   "socialLinks": [
     {
       "title": "LinkedIn",
       "url": "https://www.linkedin.com/in/psadangi/"
     }
   ],
-  "order": 7
+  "order": 8
 }
