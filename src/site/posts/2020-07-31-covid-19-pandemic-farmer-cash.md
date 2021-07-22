@@ -1,6 +1,5 @@
 ---
 title: Cash help to Farmers during the Pandemic
-contentId: sagri-valinor-earth
 ---
 
 When we were starting up, we talked with quite a lot of FPOs (Farmer Producer Organizations), AgTech Startups, and local farmer groups across India. We have learned a lot about the problems faced by Indian Farmers, and the hardships they faced. One of the biggest and most prominent being their inability to access credits from both the Public and Private sector lenders.

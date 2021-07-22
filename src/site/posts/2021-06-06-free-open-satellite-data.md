@@ -1,6 +1,5 @@
 ---
 title: Free Open Satellite Data Sources for Fun and Profit
-contentId: free-open-satellite-data
 ---
 
 <figure>

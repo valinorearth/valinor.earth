@@ -1,6 +1,5 @@
 ---
 title: India’s Geospatial Guidelines, 2021 Edition
-contentId: india-geospatial-guidelines
 ---
 
 On Feb 15, 2021, the [Department of Science and Technology](https://dst.gov.in) (DST) released the Guidelines for acquiring and producing Geospatial Data and Geospatial Data Services, including Maps<sup>[1]</sup>.

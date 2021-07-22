@@ -1,6 +1,5 @@
 ---
 title: Valinor Earth
-contentId: valinor-earth
 ---
 
 It all started when the research initiative led by Brajeshwar Oinam picked one of the biggest problems faced by farmers -- their inability to access favorable credits at the right time.

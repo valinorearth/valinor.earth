@@ -1,6 +1,5 @@
 ---
 title: Contributing to Sustainable Development Goals
-contentId: sustainable-development-goals
 ---
 
 The world faces a few global and critical issues that adversely affect the international community and environment, possibly in a catastrophic way, including environmental issues, political crises, social issues, and economic crisis.
