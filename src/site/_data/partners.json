@@ -1,18 +1,23 @@
 [
   {
-    "name": "Solar WildLife Fence",
-    "logoPath": "/img/logo-customer-solarwildlifefence.svg",
+    "name": "Aranya Paridhi",
+    "logoPath": "/img/logo-customer-aranya-paridhi.png",
     "url": "https://solarwildlifefence.world"
-  },
-  {
-    "name": "Freshies Fresh",
-    "logoPath": "/img/logo-partner-freshies-fresh.png",
-    "url": "https://freshiesfresh.com"
   },
   {
     "name": "Hosachi Guru",
     "logoPath": "/img/logo-customer-hosachiguru.png",
     "url": "https://www.hosachiguru.com"
+  },
+  {
+    "name": "VillaMart",
+    "logoPath": "/img/logo-partner-villamart.png",
+    "url": "https://www.villamart.in"
+  },
+  {
+    "name": "Freshies Fresh",
+    "logoPath": "/img/logo-partner-freshies-fresh.png",
+    "url": "https://freshiesfresh.com"
   },
   {
     "name": "MyStartupYatra",
