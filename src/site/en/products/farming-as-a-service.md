@@ -1,8 +1,8 @@
 ---
-title: Farming as a Service Companies
-contentId: faas
+title: Farmers’ Collective
+contentId: farmers
 coverImage: /img/product-cover-faas.jpg
 order: 5
 ---
 
-Startups and companies, farming on behalf of their customers, helping the ecosystem, and helping communities eat healthier benefit from our easy to use multi-farm management system.
+Farmers’ Groups, Farming as a Service (FAAS) companies, uses our dashboard to monitor, manage smallholder farmer details, farm-inputs requirements, productivity checklists, and seasonal yield predictions.
