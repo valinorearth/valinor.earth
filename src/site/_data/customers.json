@@ -1,7 +1,7 @@
 [
   {
-    "name": "Hoshajiguru",
-    "logoPath": "/img/logo-customer-hosachiguru.png",
-    "url": "https://www.hosachiguru.com/"
+    "name": "CUSTOMER_NAME",
+    "logoPath": "/img/logo.png",
+    "url": "https://www.customer.com/"
   }
 ]
