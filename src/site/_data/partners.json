@@ -33,5 +33,10 @@
     "name": "IntelliCulture",
     "logoPath": "/img/logo-partner-intelliculture.png",
     "url": "https://www.intelliculture.ca"
+  },
+  {
+    "name": "Wyvern",
+    "logoPath": "/img/logo-partner-wyvern.svg",
+    "url": "https://wyvern.space"
   }
 ]
