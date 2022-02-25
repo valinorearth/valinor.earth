@@ -2,10 +2,11 @@ const primaryNav = [
   // ContentIds from pages
   "about",
   "blog",
+  "jobs",
   "contact",
 ];
 
-const secondaryNav = [...primaryNav, "tools", "privacy"];
+const secondaryNav = [...primaryNav, "privacy"];
 module.exports = {
   buildTime: new Date(),
   baseUrl: "https://valinor.earth",

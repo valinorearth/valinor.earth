@@ -1,47 +1,12 @@
 [
   {
-    "name": "AgriSoul",
-    "logoPath": "/img/logo-partner-agrisoul.png",
-    "url": "http://agrisoul.in"
-  },
-  {
-    "name": "Aranya Paridhi",
-    "logoPath": "/img/logo-customer-aranya-paridhi.png",
-    "url": "https://aranya-paridhi-opc-private-limited.business.site"
-  },
-  {
-    "name": "Freshies Fresh",
-    "logoPath": "/img/logo-partner-freshies-fresh.png",
-    "url": "https://freshiesfresh.com"
-  },
-  {
-    "name": "Hosachi Guru",
-    "logoPath": "/img/logo-customer-hosachiguru.png",
-    "url": "https://www.hosachiguru.com"
-  },
-  {
-    "name": "IntelliCulture",
-    "logoPath": "/img/logo-partner-intelliculture.png",
-    "url": "https://www.intelliculture.ca"
-  },
-  {
-    "name": "MyStartupYatra",
-    "logoPath": "/img/logo-partner-mystartupyatra.png",
-    "url": "https://mystartupyatra.com"
-  },
-  {
     "name": "On Deck Founders",
     "logoPath": "/img/logo-partner-ondeck.svg",
     "url": "https://beondeck.com/r/BrajeshwarOinam"
   },
   {
-    "name": "VillaMart",
-    "logoPath": "/img/logo-partner-villamart.png",
-    "url": "https://www.villamart.in"
-  },
-  {
-    "name": "Wyvern",
-    "logoPath": "/img/logo-partner-wyvern.svg",
-    "url": "https://wyvern.space"
+    "name": "500 Globals",
+    "logoPath": "/img/logo-partner-500.png",
+    "url": "https://ecosystems.500.co/accelerate_aichi/startups"
   }
 ]

@@ -5,4 +5,4 @@ Brajeshwar Oinam started his entrepreneurial journey with his first company in 2
 
 In 2010, he started [Levoma](https://www.crunchbase.com/organization/levoma), which exited to a Singapore Investment firm, [Kamelot Kapital Pte Ltd](https://www.sgpbusiness.com/company/Kamelot-Kapital-Pte-Ltd), in 2013.
 
-He currently focuses on solving farmers’ problems and is trying to help curb the impact of agriculture on climate change.
+He is on an adventure learning more about the world and building beautiful and meaningful products to improve it.

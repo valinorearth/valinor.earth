@@ -10,11 +10,16 @@ layout: layouts/home.njk
   <div class="text-gray-500 flex flex-col justify-center">
     <h1 class="sr-only">{{site.title[locale]}}</h1>
     <p class="[ -mt-1 py-1 ][ text-lg md:text-4xl lg:text-6xl leading-snug md:leading-none lg:tracking-tight font-bold ][ text-transparent bg-clip-text bg-gradient-to-tl from-earth-800 to-earth-600 ]">
-      Climate-Smart Farming
+      Curbing Climate Change
     </p>
     <p class="md:mt-3 text-sm md:text-base lg:text-xl">
-      We help farmers, <mark>big and small</mark>, with software, technology tools, and processes to farm smarter.
-      Artificial Intelligence augmented methods help farmers to be sustainable while increasing crop yields.
+      We puts AI (artificial intelligence) into a suite of software tools to
+      <mark>track, analyze, and report,</mark>
+      on ESG<sup>*</sup> and CSR<sup>†</sup> activities helping companies get to carbon net-zero.
+    </p>
+    <p class="md:mt-3 text-xs">
+      * Environmental, Social, and Governance<br>
+      † Corporate Social Responsibility
     </p>
     <div class="mt-4 md:mt-8 text-sm flex flex-wrap items-center -m-2">
       <div class="p-2">
@@ -37,6 +42,7 @@ layout: layouts/home.njk
   {% include "components/services.njk" %}
 </div>
 
+{#
 <div class="[ section section--border-top ] mt-8 md:mt-12">
   {% include "components/products.njk" %}
 </div>
@@ -53,9 +59,9 @@ layout: layouts/home.njk
   <h2 class="section__title text-center">Mobile Apps</h2>
   {% include "components/apps.njk" %}
 </div>
+#}
 
-<div class="section max-w-md mx-auto mt-8 md:mt-12">
-  <h2 class="section__title text-center">Partners & Customers</h2>
+<div class="[ section section--border-top ] mt-8 md:mt-12">
   {% include "components/partners.njk" %}
 </div>
 
