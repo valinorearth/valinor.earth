@@ -1,0 +1,13 @@
+{
+  "name": "Tapas Ray",
+  "title": "Advisor",
+  "photoPath": "/img/photo-profile-tapas-ray.jpg",
+  "tags": ["team"],
+  "socialLinks": [
+    {
+      "title": "LinkedIn",
+      "url": "https://www.linkedin.com/in/tapasr/"
+    }
+  ],
+  "order": 30
+}
