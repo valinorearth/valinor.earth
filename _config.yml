@@ -1,0 +1,18 @@
+title: Valinor Earth
+description: 'Valinor Earth has a software suite for companies to monitor and analyze their carbon-offset credits, helping them take action on where to spend their money.'
+
+permalink: pretty
+permalink: /:title/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.babel.js
+  - LICENSE.md
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - src
+  - tailwind.config.js
+  - netlify.toml

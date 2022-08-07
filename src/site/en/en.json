@@ -1,5 +1,0 @@
-{
-  "locale": "en",
-  "layout": "default",
-  "permalink": "{{ page.filePathStem | removeDir }}/index.html"
-}

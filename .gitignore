@@ -1,9 +1,9 @@
-*.sublime-project
-*.sublime-workspace
-
-dist
+.bundle/
+.DS_Store
+.jekyll-cache
+.jekyll-metadata
+_site
 node_modules
-todo.*
 
 # Ignore hidden folders #
 # This takes care of .tmp, .sass-cache, and many others #

@@ -1,5 +1,0 @@
-{
-  "tags": ["products"],
-  "order": 0,
-  "permalink": "{{ page.filePathStem | removeDir(2) }}/index.html"
-}

@@ -1,43 +1,49 @@
-const { colors } = require("tailwindcss/defaultTheme");
-const brandColors = require("./tailwind.colors.js");
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: ["./src/**/*.njk", "./src/**/*.html", "./src/**/*.md"],
+  content: [`_site/**/*.html`],
   theme: {
-    fontFamily: {
-      display: ["Fira Sans", "system-ui"],
-      body: ["Fira Sans", "system-ui"],
-    },
-    letterSpacing: {
-      tighter: "-.025em",
-      tight: "-.0125em",
-      normal: "0",
-      wide: ".0125em",
-      wider: ".025em",
-      widest: ".5em",
-    },
-    colors: {
-      transparent: colors.transparent,
-      current: colors.current,
-      black: colors.black,
-      white: colors.white,
-      gray: colors.gray,
-      red: colors.red,
-      green: colors.green,
-      ...brandColors,
-    },
     extend: {
-      spacing: {
-        "1/1": "100%",
-        "1/2": "50%",
-        "1/3": "33.333333%",
-        "2/3": "66.666667%",
-        "16/9": "56.25%",
-        "4/3": "75%",
+      // https://tailwindcolorgenerator.com
+      colors: {
+        ve: {
+          'earth': '#cc7722',
+          'water': '#0e78be',
+          'fire':  '#f0b81a',
+          'wind':  '#cfdff6',
+          'void':  '#f3ebde',
+        },
+        earth: {
+           50: '#fea954',
+          100: '#f49f4a',
+          200: '#ea9540',
+          300: '#e08b36',
+          400: '#d6812c',
+          500: '#cc7722', //earth
+          600: '#c26d18',
+          700: '#b8630e',
+          800: '#ae5904',
+          900: '#a44f00'
+        },
+        water: {
+           50: '#40aaf0',
+          100: '#36a0e6',
+          200: '#2c96dc',
+          300: '#228cd2',
+          400: '#1882c8',
+          500: '#0e78be', //water}
+          600: '#046eb4',
+          700: '#0064aa',
+          800: '#005aa0',
+          900: '#005096',
+        },
       },
     },
   },
-  variants: {
-    backgroundColor: ["responsive", "hover", "focus", "active", "group-hover"],
-  },
+  variants: {},
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+    // require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+  ],
 };

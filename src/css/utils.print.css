@@ -1,5 +1,0 @@
-@media print {
-  body > *:not(main) {
-    @apply hidden;
-  }
-}

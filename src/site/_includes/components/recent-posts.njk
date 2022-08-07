@@ -1,7 +1,0 @@
-{% import "macros/lists.njk" as lists %}
-<div class="text-center -mt-4">
-  {{ lists.blogPosts(collections.enPosts | firstN(5), showDate=false, ulClasses="space-y-2", aClasses="hover:no-underline") }}
-  <div class="mt-2">
-    <a class="text-sm text-gray-600 hover:no-underline" href="/blog">View all</a>
-  </div>
-</div>

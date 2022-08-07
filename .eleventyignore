@@ -1,5 +1,0 @@
-# ignore all files starting with underscore
-src/**/_*
-
-src/site/ja
-src/site/ja/feed.njk

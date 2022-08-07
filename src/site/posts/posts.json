@@ -1,6 +1,0 @@
-{
-  "tags": ["posts"],
-  "layout": "layouts/post.njk",
-  "locale": "en",
-  "permalink": "blog/{{page.fileSlug}}/index.html"
-}
