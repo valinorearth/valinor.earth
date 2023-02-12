@@ -2,6 +2,13 @@
 
 > [Valinor Earth](https://valinor.earth) has a software suite for companies to monitor and analyze their carbon-offset credits, helping them take action on where to spend their money.
 
+Think few years ahead and how we want our website to be;
+
+- enterprise
+- multiple offerings
+- customer testimonials
+- clear process (might change so be prepared to have it replaced and/or tweaked)
+
 ## Requirements
 
 * [Bundler](http://bundler.io/)
