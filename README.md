@@ -1,6 +1,4 @@
-# Valinor Earth
-
-> [Valinor Earth](https://valinor.earth) has a software suite for companies to monitor and analyze their carbon-offset credits, helping them take action on where to spend their money.
+# [Valinor Earth](https://valinor.earth)
 
 Think few years ahead and how we want our website to be;
 

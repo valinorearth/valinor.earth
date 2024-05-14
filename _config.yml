@@ -1,6 +1,8 @@
 title: Valinor Earth
 description: 'Valinor Earth has a software suite for companies to monitor and analyze their carbon-offset credits, helping them take action on where to spend their money.'
 
+logo: '/assets/valinor-earth-logo.svg'
+
 permalink: pretty
 permalink: /:title/
 
