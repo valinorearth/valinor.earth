@@ -9,7 +9,7 @@ permalink: /:title/
 exclude:
   - Gemfile
   - Gemfile.lock
-  - gulpfile.babel.js
+  - gulpfile.mjs
   - LICENSE.md
   - node_modules
   - package.json

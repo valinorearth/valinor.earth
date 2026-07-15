@@ -9,6 +9,9 @@ node_modules
 # This takes care of .tmp, .sass-cache, and many others #
 .*/
 
+# ...but keep tracked config dirs (CI workflows, etc.)
+!.github/
+
 # Ignore OS generated files #
 .DS_Store*
 ehthumbs.db
