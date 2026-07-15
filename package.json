@@ -9,7 +9,7 @@
     "autoprefixer": "10.3.4",
     "browser-sync": "^2.29.3",
     "browsersync": "0.0.1-security",
-    "cross-env": "7.0.3",
+    "cross-env": "10.1.0",
     "cross-spawn": "7.0.3",
     "cssnano": "5.0.8",
     "gulp": "5.0.0",
