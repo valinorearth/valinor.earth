@@ -1,12 +1,5 @@
 # [Valinor Earth](https://valinor.earth)
 
-Think few years ahead and how we want our website to be;
-
-- enterprise
-- multiple offerings
-- customer testimonials
-- clear process (might change so be prepared to have it replaced and/or tweaked)
-
 ## Requirements
 
 * [Bundler](http://bundler.io/)
